@@ -1,0 +1,98 @@
+.card {
+    display: flex;
+    padding: 20px 30px 30px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e3e4e6;
+    border-radius: 8px;
+}
+
+.cardTitle {
+    margin-right: auto;
+    margin-bottom: 18px;
+    margin-left: auto;
+    color: #000;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.cardAmount {
+    align-items: flex-end;
+    color: #000;
+    font-size: 38px;
+    line-height: 25px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.cardFrequency {
+    color: #707070;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cardSubtitle {
+    margin-bottom: 6px;
+    color: #707070;
+    font-size: 16px;
+    line-height: 25px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.featureList {
+    display: flex;
+    min-height: 140px;
+    margin-top: 27px;
+    margin-bottom: 43px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 991px) {
+    .featureList {
+        min-height: 180px;
+    }
+}
+
+.featureContent {
+    font-weight: 400;
+    text-align: center;
+}
+
+.btnPricingSignup {
+    display: flex;
+    min-width: 130px;
+    padding: 12px 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    flex: 0 0 auto;
+    background-color: #4cb53c;
+}
+
+.btnPricingSignup:hover {
+    background-color: #029f36;
+}
+
+@media screen and (max-width: 991px) {
+    .btnPricingSignup {
+        padding: 10px 40px;
+        flex: 0 auto;
+    }
+}
