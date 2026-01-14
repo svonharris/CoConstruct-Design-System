@@ -1,35 +1,27 @@
+import PricingCard from "./components/PricingCard/PricingCard";
+
 function App() {
   return (
     <>
       <div className="pricing-card-grid">
-        <div className="p02_card-2">
-          <div className="pricing-card--title">Essential</div>
-          <p className="pricing-card--amount po2_card--right">
-            <span id="PlanPriceStand" className="pricing-card--price">
-              $99
-            </span>
-            <span id="PlanFrequencyStand" className="pricing-card--frequency">
-              /mo
-            </span>
-          </p>
-          <p id="PlanDisclaimerStand" className="pricing-card--subtitle">
-            $399 after 2 months
-          </p>
-          <div className="pricing-feature--list">
-            <div className="pricing-feature--content">
-              For teams looking to achieve more efficient job sites and simpler
-              project planning. You may just be getting started with software or
-              want to focus on project management and communication.
-            </div>
-          </div>
-          <a
-            href="https://buildertrend.net/app/Signups/E302M/true/0/0/?t=con"
-            id="PlanBtnStand"
-            className="button_pricing-signup"
-          >
-            Sign up
-          </a>
-        </div>
+        <PricingCard
+          plan="Essential"
+          price="$99"
+          promo="$399 after 2 months"
+          description="For teams looking to achieve more efficient job sites and simpler project planning. You may just be getting started with software or want to focus on project management and communication."
+        />
+        <PricingCard
+          plan="Advanced"
+          price="$399"
+          promo="$699 after 2 months"
+          description="For builders who need to create estimates with confidence and are looking for fuller financial control. All tools from Essential are included."
+        />
+        <PricingCard
+          plan="Complete"
+          price="$899"
+          promo="$1,299 after 2 months"
+          description="For those ready to centralize all complex processes – including selections and RFIs – into one simple platform. You’ll have the tools from Essential and Advanced, too."
+        />
       </div>
     </>
   );
