@@ -9,6 +9,7 @@
     border-width: 1px;
     border-color: #e3e4e6;
     border-radius: 8px;
+    min-width: 0;
 }
 
 .cardTitle {
