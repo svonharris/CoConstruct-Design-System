@@ -1,9 +1,10 @@
 import PricingCard from "./components/PricingCard/PricingCard";
+import SectionFixed3Col from "./components/SectionFixed3Col/SectionFixed3Col";
 
 function App() {
   return (
     <>
-      <div className="pricing-card-grid">
+      <SectionFixed3Col>
         <PricingCard
           plan="Essential"
           price="$99"
@@ -22,7 +23,7 @@ function App() {
           promo="$1,299 after 2 months"
           description="For those ready to centralize all complex processes – including selections and RFIs – into one simple platform. You’ll have the tools from Essential and Advanced, too."
         />
-      </div>
+      </SectionFixed3Col>
     </>
   );
 }
