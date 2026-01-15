@@ -144,22 +144,3 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-
-
-.pricing-card-grid {
-  display: grid;
-  grid-row-gap: 22px;
-}
-@media (min-width: 767px) {
-  .pricing-card-grid {
-      display: grid;
-      max-width: 800px;
-      margin-right: auto;
-      margin-left: auto;
-      grid-column-gap: 22px;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto;
-  }
-}
-
