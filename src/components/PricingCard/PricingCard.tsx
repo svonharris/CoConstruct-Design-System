@@ -1,5 +1,5 @@
-// import React from "react";
 import style from "./PricingCard.module.css";
+import Button from "../Button/Button";
 
 type PricingCardProps = {
   plan: string;
@@ -13,24 +13,22 @@ const PricingCard = ({ plan, price, promo, description }: PricingCardProps) => {
     <div className={style.card}>
       <div className={style.cardTitle}>{plan}</div>
       <p className={style.cardAmount}>
-        <span id="PlanPriceStand">{price}</span>
-        <span id="PlanFrequencyStand" className={style.cardFrequency}>
-          /mo
-        </span>
+        <span>{price}</span>
+        <span className={style.cardFrequency}>/mo</span>
       </p>
-      <p id="PlanDisclaimerStand" className={style.cardSubtitle}>
-        {promo}
-      </p>
+      <p className={style.cardSubtitle}>{promo}</p>
       <div className={style.featureList}>
         <div className={style.featureContent}>{description}</div>
       </div>
-      <a
-        href="https://buildertrend.net/app/Signups/E302M/true/0/0/?t=con"
-        id="PlanBtnStand"
-        className={style.btnPricingSignup}
+      <Button
+        onClick={() => {
+          window.location.href =
+            "https://buildertrend.net/app/Signups/E302M/true/0/0/?t=con";
+        }}
+        ariaLabel={`Sign up for the ${plan} plan`}
       >
         Sign up
-      </a>
+      </Button>
     </div>
   );
 };
