@@ -1,9 +1,19 @@
 import PricingCard from "./components/PricingCard/PricingCard";
 import SectionFixed3Col from "./components/SectionFixed3Col/SectionFixed3Col";
+import Button from "./components/Button/Button";
 
 function App() {
   return (
     <>
+      <Button
+        onClick={() => {
+          window.location.href = "/pricing";
+        }}
+        ariaLabel="View pricing page"
+      >
+        Our Prices
+      </Button>
+      <br></br>
       <SectionFixed3Col>
         <PricingCard
           plan="Essential"
