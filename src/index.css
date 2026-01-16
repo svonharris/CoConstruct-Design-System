@@ -137,10 +137,14 @@ body {
   font-family: var(--font-primary);
   font-weight: var(--font-medium);
   font-size: 14px;
-  line-height: 20px;
 }
 
 p {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+a {
+  color: #0067ee;
+  text-decoration: underline;
 }
