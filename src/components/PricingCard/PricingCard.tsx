@@ -6,9 +6,16 @@ type PricingCardProps = {
   price: string;
   promo: string;
   description: string;
+  href?: string;
 };
 
-const PricingCard = ({ plan, price, promo, description }: PricingCardProps) => {
+const PricingCard = ({
+  plan,
+  price,
+  promo,
+  description,
+  href,
+}: PricingCardProps) => {
   return (
     <div className={style.card}>
       <div className={style.cardTitle}>{plan}</div>
@@ -22,8 +29,9 @@ const PricingCard = ({ plan, price, promo, description }: PricingCardProps) => {
       </div>
       <Button
         onClick={() => {
-          window.location.href =
-            "https://buildertrend.net/app/Signups/E302M/true/0/0/?t=con";
+          if (href) {
+            window.location.href = href;
+          }
         }}
         ariaLabel={`Sign up for the ${plan} plan`}
       >
