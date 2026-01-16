@@ -10,6 +10,7 @@ function App() {
           window.location.href = "/pricing";
         }}
         ariaLabel="View pricing page"
+        variant="secondary"
       >
         Our Prices
       </Button>
