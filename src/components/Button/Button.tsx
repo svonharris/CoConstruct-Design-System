@@ -6,8 +6,10 @@ type ButtonProps = {
   ariaLabel: string;
   type?: "button" | "submit";
   disabled?: boolean;
-  variant: "primary" | "secondary";
+  variant?: ButtonVariant;
 };
+
+type ButtonVariant = "primary" | "secondary";
 
 const Button = ({
   children,
@@ -15,11 +17,16 @@ const Button = ({
   ariaLabel,
   type = "button",
   disabled,
-}: //   variant,
-ButtonProps) => {
+  variant = "primary",
+}: ButtonProps) => {
+  const variantStyles: Record<ButtonVariant, string> = {
+    primary: style.primaryButton,
+    secondary: style.secondaryButton,
+  };
+
   return (
     <button
-      className={style.baseButton}
+      className={`${style.baseButton} ${variantStyles[variant]}`}
       onClick={onClick}
       aria-label={ariaLabel}
       type={type}
