@@ -1,0 +1,31 @@
+.baseButton {
+    display: flex;
+    min-width: 130px;
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 250ms ease;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: proxima-nova, sans-serif;
+    border: none;
+}
+
+.greenButton {
+    background-color: #4cb53c; /* difference */
+}
+.greenButton:hover {
+    background-color: #029f36; /* difference */
+}
+
+.darkButton {
+    background-color: #1a1a1a;
+}
+.darkButton:hover {
+    background-color: #3f3f3f;
+}
