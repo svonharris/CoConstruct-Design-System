@@ -1,10 +1,13 @@
 import PricingCard from "./components/PricingCard/PricingCard";
 import SectionFixed3Col from "./components/SectionFixed3Col/SectionFixed3Col";
 import Button from "./components/Button/Button";
+import Toggle from "./components/ToggleSwitch/ToggleSwitch";
 
 function App() {
   return (
     <>
+      <Toggle />
+      <br></br>
       <Button
         onClick={() => {
           window.location.href = "/pricing";
