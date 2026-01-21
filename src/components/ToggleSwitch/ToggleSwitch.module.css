@@ -1,0 +1,29 @@
+.toggleSwitchContainer {
+    display: flex;
+    width: 229px;
+    height: 42px;
+    padding: 4px 5px;
+    justify-content: space-between;
+    border: 1px solid #e3e4e6;
+    border-radius: 21px;
+    background-color: #fff;
+}
+
+.toggleSwitchBtn {
+    display: flex;
+    width: 108px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    background-color: #d2ebd9;
+    color: #029f36;
+    line-height: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.inactive {
+    background-color: transparent;
+    color: #2a2d34;
+    font-weight: 400;
+}
