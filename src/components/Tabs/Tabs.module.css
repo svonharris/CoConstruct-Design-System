@@ -1,0 +1,31 @@
+.tabHeadingLink {
+    font-weight: 700;
+    background-color: transparent;
+    color: #707070;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.tabHeadingLinkActive {
+    border-bottom: 4px solid #2a2d34;
+}
+
+.tabsContent {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.tabsHeading {
+    margin-bottom: 68px;
+}
+
+.tabPane {
+    max-width: 78%;
+    margin-bottom: 65px;
+    margin: 0 auto;
+}
