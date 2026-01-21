@@ -2,6 +2,7 @@ import PricingCard from "./components/PricingCard/PricingCard";
 import SectionFixed3Col from "./components/SectionFixed3Col/SectionFixed3Col";
 import Button from "./components/Button/Button";
 import Toggle from "./components/ToggleSwitch/ToggleSwitch";
+import Tabs from "./components/Tabs/Tabs";
 
 function App() {
   return (
@@ -41,6 +42,39 @@ function App() {
           href="https://www.coconstruct.com/Signups/C302M"
         />
       </SectionFixed3Col>
+      <br></br>
+      <Tabs
+        tabs={[
+          { label: "Tab 1", children: <p>This is the content of Tab 1.</p> },
+          {
+            label: "Tab 2",
+            children: (
+              <PricingCard
+                plan="Essential"
+                price="$99"
+                promo="$399 after 2 months"
+                description="For teams looking to achieve more efficient job sites and simpler project planning. You may just be getting started with software or want to focus on project management and communication."
+                href="https://www.coconstruct.com/Signups/A302M"
+              />
+            ),
+          },
+          {
+            label: "Tab 3",
+            children: (
+              <Button
+                onClick={() => {
+                  window.location.href = "/pricing";
+                }}
+                ariaLabel="View pricing page"
+                variant="secondary"
+              >
+                This is a Tab with a Button
+              </Button>
+            ),
+          },
+        ]}
+        defaultActiveTab={0}
+      />
     </>
   );
 }
