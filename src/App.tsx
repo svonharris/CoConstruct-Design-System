@@ -6,7 +6,7 @@ import Toggle from "./components/ToggleSwitch/ToggleSwitch";
 function App() {
   return (
     <>
-      <Toggle />
+      <Toggle firstLabel="Daily" secondLabel="Weekly" />
       <br></br>
       <Button
         onClick={() => {

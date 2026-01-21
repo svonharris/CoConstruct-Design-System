@@ -1,7 +1,15 @@
 import { useState } from "react";
 import style from "./ToggleSwitch.module.css";
 
-const ToggleSwitch = () => {
+type ToggleSwitchProps = {
+  firstLabel?: string;
+  secondLabel?: string;
+};
+
+const ToggleSwitch = ({
+  firstLabel = "Monthly",
+  secondLabel = "Yearly",
+}: ToggleSwitchProps) => {
   const [isYearly, setIsYearly] = useState(false);
 
   const handleToggleSwitch = (yearly: boolean) => {
@@ -14,13 +22,13 @@ const ToggleSwitch = () => {
         className={`${style.toggleSwitchBtn} ${!isYearly ? "" : style.inactive}`}
         onClick={() => handleToggleSwitch(false)}
       >
-        Monthly
+        {firstLabel}
       </button>
       <button
         className={`${style.toggleSwitchBtn} ${isYearly ? "" : style.inactive}`}
         onClick={() => handleToggleSwitch(true)}
       >
-        Yearly
+        {secondLabel}
       </button>
     </div>
   );
