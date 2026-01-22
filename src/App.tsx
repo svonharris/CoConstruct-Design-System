@@ -4,7 +4,7 @@ import Button from "./components/Button/Button";
 import Toggle from "./components/ToggleSwitch/ToggleSwitch";
 import Tabs from "./components/Tabs/Tabs";
 import HeroSection from "./components/HeroSection/HeroSection";
-import Form from "./components/Form/Form";
+import Form from "./components/Form/FormInput";
 
 function App() {
   return (
