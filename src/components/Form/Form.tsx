@@ -1,5 +1,6 @@
 import { useState } from "react";
 import style from "./Form.module.css";
+import Button from "../Button/Button";
 
 type FormData = {
   firstName: string;
@@ -49,6 +50,7 @@ const Form = () => {
           name="firstName"
           value={formData.firstName}
           onChange={handleChange}
+          className={style.formInput}
           required
         />
       </div>
@@ -63,6 +65,7 @@ const Form = () => {
           name="lastName"
           value={formData.lastName}
           onChange={handleChange}
+          className={style.formInput}
           required
         />
       </div>
@@ -77,6 +80,7 @@ const Form = () => {
           name="workEmail"
           value={formData.workEmail}
           onChange={handleChange}
+          className={style.formInput}
           required
         />
       </div>
@@ -91,6 +95,7 @@ const Form = () => {
           name="phoneNumber"
           value={formData.phoneNumber}
           onChange={handleChange}
+          className={style.formInput}
           required
         />
       </div>
@@ -105,6 +110,7 @@ const Form = () => {
           name="companyName"
           value={formData.companyName}
           onChange={handleChange}
+          className={style.formInput}
           required
         />
       </div>
@@ -119,6 +125,7 @@ const Form = () => {
           name="revenue"
           value={formData.revenue}
           onChange={handleChange}
+          className={style.formSelect}
           required
         >
           <option value="">Please Select</option>
@@ -139,6 +146,7 @@ const Form = () => {
           name="builderType"
           value={formData.builderType}
           onChange={handleChange}
+          className={style.formSelect}
           required
         >
           <option value="">Please Select</option>
@@ -156,9 +164,14 @@ const Form = () => {
         </select>
       </div>
 
-      <button type="submit" className={style.submitBtn}>
+      <Button
+        type="submit"
+        variant="primary"
+        onClick={() => console.log("Submit button clicked")}
+        ariaLabel="Submit contactform"
+      >
         Submit
-      </button>
+      </Button>
     </form>
   );
 };
