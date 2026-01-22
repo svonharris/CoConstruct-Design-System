@@ -3,10 +3,15 @@ import SectionFixed3Col from "./components/SectionFixed3Col/SectionFixed3Col";
 import Button from "./components/Button/Button";
 import Toggle from "./components/ToggleSwitch/ToggleSwitch";
 import Tabs from "./components/Tabs/Tabs";
+import HeroSection from "./components/HeroSection/HeroSection";
 
 function App() {
   return (
     <>
+      <HeroSection
+        heading="Section heading here"
+        subheading="Write some subheading text here."
+      />
       <Toggle firstLabel="Daily" secondLabel="Weekly" />
       <br></br>
       <Button
