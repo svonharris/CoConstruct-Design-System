@@ -1,4 +1,20 @@
+.container {
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+.containerBackground {
+    display: flex;
+    min-height: 297px;
+    background-image: url(../../assets/green-line-background.png);
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .title {
+    color: #2a2d34;
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
