@@ -11,6 +11,7 @@ function App() {
       <HeroSection
         heading="Section heading here"
         subheading="Write some subheading text here."
+        hasBackground={true}
       />
       <Toggle firstLabel="Daily" secondLabel="Weekly" />
       <br></br>
