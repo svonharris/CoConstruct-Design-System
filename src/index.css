@@ -116,7 +116,8 @@
 }
 
 :root {
-  --primary-text-color: #2a2d34;
+  --grey-dark: #2a2d34;
+  --grey-light: #707070;
 
   --font-primary: proxima-nova, sans-serif;
   --font-secondary: proxima-nova-condensed, sans-serif;
@@ -125,11 +126,6 @@
   --font-semibold:600;
   --font-medium:400;
   --font-light:300;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 *,
@@ -139,7 +135,7 @@
 }
 
 body {
-  color: var(--primary-text-color);
+  color: var(--grey-dark);
   font-family: var(--font-primary);
   font-weight: var(--font-medium);
   font-size: 14px;
