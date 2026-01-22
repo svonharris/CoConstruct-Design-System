@@ -4,6 +4,7 @@ import Button from "./components/Button/Button";
 import Toggle from "./components/ToggleSwitch/ToggleSwitch";
 import Tabs from "./components/Tabs/Tabs";
 import HeroSection from "./components/HeroSection/HeroSection";
+import Form from "./components/Form/Form";
 
 function App() {
   return (
@@ -81,6 +82,8 @@ function App() {
         ]}
         defaultActiveTab={0}
       />
+      <br></br>
+      <Form />
     </>
   );
 }
