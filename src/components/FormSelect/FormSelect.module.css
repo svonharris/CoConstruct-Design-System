@@ -24,6 +24,7 @@
     margin-bottom: 15px;
     appearance: none;
     border: none;
+    border-bottom: 1px solid #ededed;
     /* border: 1px solid #f2545b; */
 }
 .formSelect:focus-visible {
