@@ -1,11 +1,17 @@
 import style from "./FormSelect.module.css";
 
+type SelectOptionProps = {
+  value: string;
+  label: string;
+};
+
 type FormSelectProps = {
   id: string;
   name: string;
   label: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  options: SelectOptionProps[];
   required?: boolean;
 };
 
@@ -15,6 +21,7 @@ const FormSelect = ({
   label,
   value,
   onChange,
+  options,
   required = false,
 }: FormSelectProps) => {
   return (
@@ -28,14 +35,15 @@ const FormSelect = ({
         name={name}
         value={value}
         onChange={onChange}
-        className={style.formInput}
+        className={style.formSelect}
         required={required}
       >
         <option value="">Please Select</option>
-        <option value="other">Residential - Homebuilder</option>
-        <option value="architecture">Residential - Remodeler</option>
-        <option value="engineering">Specialty/Trade Contractor</option>
-        <option value="construction">Commercial General Contractor</option>
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
       </select>
     </div>
   );
