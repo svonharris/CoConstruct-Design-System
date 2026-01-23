@@ -2,6 +2,7 @@ import { useState } from "react";
 import style from "./Form.module.css";
 import Button from "../Button/Button";
 import FormInput from "../FormInput/FormInput";
+import FormSelect from "../FormSelect/FormSelect";
 
 type FormData = {
   firstName: string;
@@ -86,54 +87,44 @@ const Form = () => {
         required
       />
 
-      <div className={style.formGroup}>
-        <label htmlFor="revenue" className={style.formLabel}>
-          Which builder type best describes your business?
-          <span className={style.formRequired}>*</span>
-        </label>
-        <select
-          id="revenue"
-          name="revenue"
-          value={formData.revenue}
-          onChange={handleChange}
-          className={style.formSelect}
-          required
-        >
-          <option value="">Please Select</option>
-          <option value="other">Residential - Homebuilder</option>
-          <option value="architecture">Residential - Remodeler</option>
-          <option value="engineering">Specialty/Trade Contractor</option>
-          <option value="construction">Commercial General Contractor</option>
-        </select>
-      </div>
+      <FormSelect
+        id="builderType"
+        name="builderType"
+        label="Which builder type best describes your business?"
+        value={formData.builderType}
+        onChange={handleChange}
+        options={[
+          { value: "", label: "Please Select" },
+          { value: "Homebuilder", label: "Residential - Homebuilder" },
+          { value: "Remodeler", label: "Residential - Remodeler" },
+          { value: "Specialty/Trade", label: "Specialty/Trade Contractor" },
+          { value: "Commercial", label: "Commercial General Contractor" },
+        ]}
+        required
+      />
 
-      <div className={style.formGroup}>
-        <label htmlFor="builderType" className={style.formLabel}>
-          What is your average annual revenue?
-          <span className={style.formRequired}>*</span>
-        </label>
-        <select
-          id="builderType"
-          name="builderType"
-          value={formData.builderType}
-          onChange={handleChange}
-          className={style.formSelect}
-          required
-        >
-          <option value="">Please Select</option>
-          <option value="commercial">$0 - 499K</option>
-          <option value="industrial">$500K - 999k</option>
-          <option value="mixed-use">$1M - 1.99M</option>
-          <option value="mixed-use">$2M - 4.99M</option>
-          <option value="mixed-use">$5M - 7.99M</option>
-          <option value="mixed-use">$8M - 10.99M</option>
-          <option value="mixed-use">$11 - 15.99M</option>
-          <option value="mixed-use">$16M - 20.99M</option>
-          <option value="mixed-use">$31 - 25.99M</option>
-          <option value="mixed-use">$26 - 25.99M</option>
-          <option value="mixed-use">$31M+</option>
-        </select>
-      </div>
+      <FormSelect
+        id="revenue"
+        name="revenue"
+        label="What is your average annual revenue?"
+        value={formData.revenue}
+        onChange={handleChange}
+        options={[
+          { value: "", label: "Please Select" },
+          { value: "0-499k", label: "$0 - 499K" },
+          { value: "500k-999k", label: "$500K - 999K" },
+          { value: "1m-1.99m", label: "$1M - 1.99M" },
+          { value: "2m-4.99m", label: "$2M - 4.99M" },
+          { value: "5m-7.99m", label: "$5M - 7.99M" },
+          { value: "8m-10.99m", label: "$8M - 10.99M" },
+          { value: "11m-15.99m", label: "$11M - 15.99M" },
+          { value: "16m-20.99m", label: "$16M - 20.99M" },
+          { value: "21m-25.99m", label: "$21M - 25.99M" },
+          { value: "26m-30.99m", label: "$26M - 30.99M" },
+          { value: "31m+", label: "$31M+" },
+        ]}
+        required
+      />
 
       <Button
         type="submit"
