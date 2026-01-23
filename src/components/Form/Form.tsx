@@ -1,6 +1,7 @@
 import { useState } from "react";
 import style from "./Form.module.css";
 import Button from "../Button/Button";
+import FormInput from "../FormInput/FormInput";
 
 type FormData = {
   firstName: string;
@@ -40,80 +41,50 @@ const Form = () => {
 
   return (
     <form className={style.form} onSubmit={handleSubmit}>
-      <div className={style.formGroup}>
-        <label htmlFor="firstName" className={style.formLabel}>
-          First Name<span className={style.formRequired}>*</span>
-        </label>
-        <input
-          type="text"
-          id="firstName"
-          name="firstName"
-          value={formData.firstName}
-          onChange={handleChange}
-          className={style.formInput}
-          required
-        />
-      </div>
+      <FormInput
+        id="firstName"
+        name="firstName"
+        label="First Name"
+        value={formData.firstName}
+        onChange={handleChange}
+        required
+      />
 
-      <div className={style.formGroup}>
-        <label htmlFor="lastName" className={style.formLabel}>
-          Last Name<span className={style.formRequired}>*</span>
-        </label>
-        <input
-          type="text"
-          id="lastName"
-          name="lastName"
-          value={formData.lastName}
-          onChange={handleChange}
-          className={style.formInput}
-          required
-        />
-      </div>
+      <FormInput
+        id="lastName"
+        name="lastName"
+        label="Last Name"
+        value={formData.lastName}
+        onChange={handleChange}
+        required
+      />
 
-      <div className={style.formGroup}>
-        <label htmlFor="workEmail" className={style.formLabel}>
-          Work Email<span className={style.formRequired}>*</span>
-        </label>
-        <input
-          type="email"
-          id="workEmail"
-          name="workEmail"
-          value={formData.workEmail}
-          onChange={handleChange}
-          className={style.formInput}
-          required
-        />
-      </div>
+      <FormInput
+        id="email"
+        name="workEmail"
+        label="Work Email"
+        value={formData.workEmail}
+        onChange={handleChange}
+        required
+      />
 
-      <div className={style.formGroup}>
-        <label htmlFor="phoneNumber" className={style.formLabel}>
-          Phone Number<span className={style.formRequired}>*</span>
-        </label>
-        <input
-          type="tel"
-          id="phoneNumber"
-          name="phoneNumber"
-          value={formData.phoneNumber}
-          onChange={handleChange}
-          className={style.formInput}
-          required
-        />
-      </div>
+      <FormInput
+        id="tel"
+        name="phoneNumber"
+        label="Phone Number"
+        value={formData.phoneNumber}
+        onChange={handleChange}
+        required
+      />
 
-      <div className={style.formGroup}>
-        <label htmlFor="companyName" className={style.formLabel}>
-          Company Name<span className={style.formRequired}>*</span>
-        </label>
-        <input
-          type="text"
-          id="companyName"
-          name="companyName"
-          value={formData.companyName}
-          onChange={handleChange}
-          className={style.formInput}
-          required
-        />
-      </div>
+      <FormInput
+        id="text"
+        name="companyName"
+        label="Company Name"
+        value={formData.companyName}
+        onChange={handleChange}
+        required
+      />
 
       <div className={style.formGroup}>
         <label htmlFor="revenue" className={style.formLabel}>
