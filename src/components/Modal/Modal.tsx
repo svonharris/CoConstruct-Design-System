@@ -1,12 +1,15 @@
 import { useState } from "react";
 import styles from "./Modal.module.css";
+import Button from "../Button/Button";
 
 type ModalProps = {
   children: React.ReactNode;
-  trigger: React.ReactNode;
+  buttonLabel: string;
+  ariaLabel: string;
+  variant?: "primary" | "secondary";
 };
 
-const Modal = ({ children, trigger }: ModalProps) => {
+const Modal = ({ children, buttonLabel, ariaLabel, variant }: ModalProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => setIsOpen(true);
@@ -14,7 +17,9 @@ const Modal = ({ children, trigger }: ModalProps) => {
 
   return (
     <>
-      <div onClick={openModal}>{trigger}</div>
+      <Button onClick={openModal} ariaLabel={ariaLabel} variant={variant}>
+        {buttonLabel}
+      </Button>
 
       {isOpen && (
         <div className={styles.modalOverlay} onClick={closeModal}>
@@ -23,7 +28,7 @@ const Modal = ({ children, trigger }: ModalProps) => {
             onClick={(e) => e.stopPropagation()}
           >
             <button className={styles.closeBtn} onClick={closeModal}>
-              ✕
+              +
             </button>
             {children}
           </div>
