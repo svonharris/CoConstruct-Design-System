@@ -67,6 +67,7 @@ const NavBar = ({ navLinks }: NavLinkProps) => {
           <div className={style.navLinks}>
             {navLinks.map((option) => (
               <a
+                className={style.navLink}
                 key={option.href}
                 href={option.href}
                 aria-label={option.ariaLabel}

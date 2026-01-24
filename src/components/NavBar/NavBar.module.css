@@ -39,12 +39,14 @@
 .navLink {
   color: #2a2d34;
   text-decoration: none;
-  font-weight: 500;
   transition: color 0.3s ease;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
 }
 
 .navLink:hover {
-  color: #029f36;
+  color: #979797;
 }
 
 .hamburger {
