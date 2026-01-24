@@ -11,7 +11,14 @@ import NavBar from "./components/NavBar/NavBar";
 function App() {
   return (
     <>
-      <NavBar />
+      <NavBar
+        navLinks={[
+          { label: "Homes", href: "/" },
+          { label: "Abouts", href: "/about" },
+          { label: "Servicess", href: "/services" },
+          { label: "Contacts", href: "/contact" },
+        ]}
+      />
       <HeroSection
         heading="Section heading here"
         subheading="Write some subheading text here."
