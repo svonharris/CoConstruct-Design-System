@@ -22,6 +22,7 @@ function App() {
         buttonLabel="Schedule a Demo"
         ariaLabel="Open the schedule a demo form"
         variant="secondary"
+        title="Open the schedule a demo form"
       >
         <div style={{ display: "flex", flexDirection: "row" }}>
           <div style={{ width: "50%" }}>
@@ -41,8 +42,9 @@ function App() {
         onClick={() => {
           window.location.href = "/pricing";
         }}
-        ariaLabel="View pricing page"
+        ariaLabel="Go to Pricing Page"
         variant="secondary"
+        title="View pricing page"
       >
         Our Prices
       </Button>
@@ -93,8 +95,9 @@ function App() {
                 onClick={() => {
                   window.location.href = "/pricing";
                 }}
-                ariaLabel="View pricing page"
+                ariaLabel="Go to Pricing Page"
                 variant="secondary"
+                title="View pricing page"
               >
                 This is a Tab with a Button
               </Button>

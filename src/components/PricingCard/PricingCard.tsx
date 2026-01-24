@@ -34,6 +34,7 @@ const PricingCard = ({
           }
         }}
         ariaLabel={`Sign up for the ${plan} plan`}
+        title={`Sign up for the ${plan} plan`}
       >
         Sign up
       </Button>
