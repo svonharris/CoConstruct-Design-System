@@ -1,7 +1,8 @@
 import { useState } from "react";
 import style from "./NavBar.module.css";
-import Button from "../Button/Button";
 import logo from "../../assets/BT_CoConstruct_Logos_Color_Stacked.png";
+import Modal from "../Modal/Modal";
+import Form from "../Form/Form";
 
 type NavLinkOptionProps = {
   href: string;
@@ -75,13 +76,16 @@ const NavBar = ({ navLinks }: NavLinkProps) => {
           </div>
 
           {/* Button */}
-          <Button
-            onClick={() => console.log("Schedule a demo clicked")}
-            ariaLabel="Schedule a demo with CoConstruct"
+          <Modal
+            buttonLabel="Schedule a Demo"
+            ariaLabel="Open the schedule a demo form"
             variant="secondary"
+            title="Open the schedule a demo form"
           >
-            Schedule a demo
-          </Button>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <Form />
+            </div>
+          </Modal>
         </div>
       </div>
     </nav>
