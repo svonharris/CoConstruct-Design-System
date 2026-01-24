@@ -21,7 +21,7 @@ const Button = ({
   children,
   onClick,
   ariaLabel,
-  title,
+  title = ariaLabel,
   type = "button",
   disabled,
   variant = "primary",
