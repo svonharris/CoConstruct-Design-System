@@ -5,6 +5,7 @@ import Toggle from "./components/ToggleSwitch/ToggleSwitch";
 import Tabs from "./components/Tabs/Tabs";
 import HeroSection from "./components/HeroSection/HeroSection";
 import Form from "./components/Form/Form";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   return (
@@ -15,7 +16,27 @@ function App() {
         hasBackground={true}
       />
       <Toggle firstLabel="Daily" secondLabel="Weekly" />
-      <br></br>
+      <hr></hr>
+
+      <Modal
+        buttonLabel="Schedule a Demo"
+        ariaLabel="Open the schedule a demo form"
+        variant="secondary"
+      >
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <div style={{ width: "50%" }}>
+            <h3>SCHEDULE a demo now</h3>
+            <hr style={{ width: "50%", display: "inline-block" }} />
+            <h4>
+              Fill out the form to book time with a designated product expert to
+              answer all your questions.
+            </h4>
+          </div>
+          <Form />
+        </div>
+      </Modal>
+
+      <hr></hr>
       <Button
         onClick={() => {
           window.location.href = "/pricing";
