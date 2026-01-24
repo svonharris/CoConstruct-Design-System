@@ -13,10 +13,22 @@ function App() {
     <>
       <NavBar
         navLinks={[
-          { label: "Homes", href: "/" },
-          { label: "Abouts", href: "/about" },
-          { label: "Servicess", href: "/services" },
-          { label: "Contacts", href: "/contact" },
+          {
+            label: "Homes",
+            href: "/",
+            ariaLabel: "Go to Home Page",
+          },
+          { label: "Abouts", href: "/about", ariaLabel: "Go to About Page" },
+          {
+            label: "Servicess",
+            href: "/services",
+            ariaLabel: "Go to Services Page",
+          },
+          {
+            label: "Contacts",
+            href: "/contact",
+            ariaLabel: "Go to Contact Page",
+          },
         ]}
       />
       <HeroSection
