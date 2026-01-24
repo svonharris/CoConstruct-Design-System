@@ -4,6 +4,7 @@ type ButtonProps = {
   children: React.ReactNode;
   onClick: () => void;
   ariaLabel: string;
+  title?: string;
   type?: "button" | "submit";
   disabled?: boolean;
   variant?: ButtonVariant;
@@ -11,19 +12,20 @@ type ButtonProps = {
 
 type ButtonVariant = "primary" | "secondary";
 
+const variantStyles: Record<ButtonVariant, string> = {
+  primary: style.primaryButton,
+  secondary: style.secondaryButton,
+};
+
 const Button = ({
   children,
   onClick,
   ariaLabel,
+  title,
   type = "button",
   disabled,
   variant = "primary",
 }: ButtonProps) => {
-  const variantStyles: Record<ButtonVariant, string> = {
-    primary: style.primaryButton,
-    secondary: style.secondaryButton,
-  };
-
   return (
     <button
       className={`${style.baseButton} ${variantStyles[variant]}`}
@@ -31,7 +33,7 @@ const Button = ({
       aria-label={ariaLabel}
       type={type}
       disabled={disabled}
-      title={ariaLabel}
+      title={title}
     >
       {children}
     </button>
