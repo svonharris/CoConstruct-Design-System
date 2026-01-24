@@ -1,7 +1,6 @@
 .baseButton {
     display: flex;
     min-width: 130px;
-    padding: 10px 40px;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
@@ -17,6 +16,7 @@
 
 .primaryButton {
     background-color: #4cb53c;
+    padding: 12px 30px;
 }
 .primaryButton:hover {
     background-color: #029f36;
@@ -24,6 +24,7 @@
 
 .secondaryButton {
     background-color: #1a1a1a;
+    padding: 10px 40px;
 }
 .secondaryButton:hover {
     background-color: #3f3f3f;
