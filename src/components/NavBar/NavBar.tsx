@@ -21,10 +21,12 @@ type NavLinkProps = {
   //   ];
 };
 
-const logoLink = "/";
-const logoAltText = "CoConstruct | Construction Management Software";
-const logoAriaLabel = "Go to CoConstruct homepage";
-const logoTitle = "Vist the CoConstruct homepage";
+const logoProps = {
+  href: "/",
+  altText: "CoConstruct | Construction Management Software",
+  ariaLabel: "Go to CoConstruct homepage",
+  title: "Visit the CoConstruct homepage",
+};
 
 const NavBar = ({ navLinks }: NavLinkProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,11 +40,11 @@ const NavBar = ({ navLinks }: NavLinkProps) => {
         {/* Logo */}
         <div className={style.navLogo}>
           <a
-            href={logoLink}
-            aria-label={logoAriaLabel}
-            title={logoTitle ? logoTitle : logoAriaLabel}
+            href={logoProps.href}
+            aria-label={logoProps.ariaLabel}
+            title={logoProps.title ?? logoProps.ariaLabel}
           >
-            <img src={logo} alt={logoAltText} className={style.logo} />
+            <img src={logo} alt={logoProps.altText} className={style.logo} />
           </a>
         </div>
 
