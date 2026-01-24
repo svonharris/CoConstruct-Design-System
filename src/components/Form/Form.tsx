@@ -94,7 +94,6 @@ const Form = () => {
         value={formData.builderType}
         onChange={handleChange}
         options={[
-          { value: "", label: "Please Select" },
           { value: "Homebuilder", label: "Residential - Homebuilder" },
           { value: "Remodeler", label: "Residential - Remodeler" },
           { value: "Specialty/Trade", label: "Specialty/Trade Contractor" },
@@ -110,7 +109,6 @@ const Form = () => {
         value={formData.revenue}
         onChange={handleChange}
         options={[
-          { value: "", label: "Please Select" },
           { value: "0-499k", label: "$0 - 499K" },
           { value: "500k-999k", label: "$500K - 999K" },
           { value: "1m-1.99m", label: "$1M - 1.99M" },
