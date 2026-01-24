@@ -1,3 +1,4 @@
+import FormGroup from "../FormGroup/FormGroup";
 import style from "./FormInput.module.css";
 
 type FormInputProps = {
@@ -20,11 +21,7 @@ const FormInput = ({
   required = false,
 }: FormInputProps) => {
   return (
-    <div className={style.formGroup}>
-      <label htmlFor={id} className={style.formLabel}>
-        {label}
-        {required && <span className={style.formRequired}>*</span>}
-      </label>
+    <FormGroup id={id} label={label} required={required}>
       <input
         type={type}
         id={id}
@@ -34,7 +31,7 @@ const FormInput = ({
         className={style.formInput}
         required={required}
       />
-    </div>
+    </FormGroup>
   );
 };
 
