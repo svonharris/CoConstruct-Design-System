@@ -14,20 +14,24 @@ function App() {
       <NavBar
         navLinks={[
           {
-            label: "Homes",
+            label: "How it works",
             href: "/",
-            ariaLabel: "Go to Home Page",
-          },
-          { label: "Abouts", href: "/about", ariaLabel: "Go to About Page" },
-          {
-            label: "Servicess",
-            href: "/services",
-            ariaLabel: "Go to Services Page",
+            ariaLabel: "Go to How it works Page",
           },
           {
-            label: "Contacts",
-            href: "/contact",
-            ariaLabel: "Go to Contact Page",
+            label: "Pricing",
+            href: "/pricing",
+            ariaLabel: "Go to Pricing Page",
+          },
+          {
+            label: "Current Customers",
+            href: "/resources",
+            ariaLabel: "Go to Current Customers Page",
+          },
+          {
+            label: "800-213-3392",
+            href: "tel:800-213-3392",
+            ariaLabel: "Give us a call today",
           },
         ]}
       />
