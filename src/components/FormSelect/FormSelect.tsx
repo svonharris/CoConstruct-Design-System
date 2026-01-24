@@ -26,11 +26,7 @@ const FormSelect = ({
   required = false,
 }: FormSelectProps) => {
   return (
-    <FormGroup>
-      <label htmlFor={id} className={style.formLabel}>
-        {label}
-        {required && <span className={style.formRequired}>*</span>}
-      </label>
+    <FormGroup id={id} label={label} required={required}>
       <select
         id={id}
         name={name}
