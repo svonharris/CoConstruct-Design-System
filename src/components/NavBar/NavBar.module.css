@@ -1,6 +1,5 @@
 .navbar {
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -29,6 +28,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  border-bottom: 1px solid #e6e7ed;
 }
 
 .navLinks {
@@ -94,15 +94,16 @@
     background-color: #fff;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
   }
 
   .navMenu.active {
     max-height: 400px;
+    padding-bottom: 50px;
+    box-shadow: -2px 10px 10px 0 rgba(118, 126, 173, 0.1);
   }
 
   .navLinks {
