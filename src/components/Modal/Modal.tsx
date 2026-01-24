@@ -6,10 +6,17 @@ type ModalProps = {
   children: React.ReactNode;
   buttonLabel: string;
   ariaLabel: string;
+  title?: string;
   variant?: "primary" | "secondary";
 };
 
-const Modal = ({ children, buttonLabel, ariaLabel, variant }: ModalProps) => {
+const Modal = ({
+  children,
+  buttonLabel,
+  ariaLabel,
+  title,
+  variant,
+}: ModalProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => setIsOpen(true);
@@ -17,7 +24,12 @@ const Modal = ({ children, buttonLabel, ariaLabel, variant }: ModalProps) => {
 
   return (
     <>
-      <Button onClick={openModal} ariaLabel={ariaLabel} variant={variant}>
+      <Button
+        onClick={openModal}
+        ariaLabel={ariaLabel}
+        title={title}
+        variant={variant}
+      >
         {buttonLabel}
       </Button>
 
@@ -26,6 +38,9 @@ const Modal = ({ children, buttonLabel, ariaLabel, variant }: ModalProps) => {
           <div
             className={styles.modalContent}
             onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title"
           >
             <button className={styles.closeBtn} onClick={closeModal}>
               +
