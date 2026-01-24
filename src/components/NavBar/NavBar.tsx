@@ -20,9 +20,10 @@ type NavLinkProps = {
   //   ];
 };
 
-const altText = "CoConstruct | Construction Management Software";
-const logoTitle = "Vist the CoConstruct homepage";
 const logoLink = "/";
+const logoAltText = "CoConstruct | Construction Management Software";
+const logoAriaLabel = "Go to CoConstruct homepage";
+const logoTitle = "Vist the CoConstruct homepage";
 
 const NavBar = ({ navLinks }: NavLinkProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,13 +36,12 @@ const NavBar = ({ navLinks }: NavLinkProps) => {
       <div className={style.navContainer}>
         {/* Logo */}
         <div className={style.navLogo}>
-          <a href={logoLink}>
-            <img
-              src={logo}
-              alt={altText}
-              title={logoTitle}
-              className={style.logo}
-            />
+          <a
+            href={logoLink}
+            aria-label={logoAriaLabel}
+            title={logoTitle ? logoTitle : logoAriaLabel}
+          >
+            <img src={logo} alt={logoAltText} className={style.logo} />
           </a>
         </div>
 
@@ -49,7 +49,7 @@ const NavBar = ({ navLinks }: NavLinkProps) => {
         <button
           className={`${style.hamburger} ${isMenuOpen ? style.active : ""}`}
           onClick={toggleMenu}
-          aria-label="View the navigation menu"
+          aria-label="View the menu"
         >
           <span></span>
           <span></span>
@@ -67,7 +67,7 @@ const NavBar = ({ navLinks }: NavLinkProps) => {
                 key={option.href}
                 href={option.href}
                 aria-label={option.ariaLabel}
-                title={option.title}
+                title={option.title ? option.title : option.ariaLabel}
               >
                 {option.label}
               </a>
