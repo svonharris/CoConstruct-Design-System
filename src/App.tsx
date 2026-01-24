@@ -6,10 +6,12 @@ import Tabs from "./components/Tabs/Tabs";
 import HeroSection from "./components/HeroSection/HeroSection";
 import Form from "./components/Form/Form";
 import Modal from "./components/Modal/Modal";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (
     <>
+      <NavBar />
       <HeroSection
         heading="Section heading here"
         subheading="Write some subheading text here."
