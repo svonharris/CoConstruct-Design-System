@@ -3,19 +3,28 @@ import style from "./NavBar.module.css";
 import Button from "../Button/Button";
 import logo from "../../assets/BT_CoConstruct_Logos_Color_Stacked.png";
 
-type NavLink = {
-  label: string;
+type NavLinkOptionProps = {
   href: string;
+  label: string;
+  ariaLabel: string;
+  title?: string;
 };
 
-const NAV_LINKS: NavLink[] = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Contact", href: "/contact" },
-];
+type NavLinkProps = {
+  navLinks: NavLinkOptionProps[];
+  //   navLinks: [
+  //     {
+  //       href: string;
+  //       label: string;
+  //     },
+  //   ];
+};
 
-const NavBar = () => {
+const altText = "CoConstruct | Construction Management Software";
+const logoTitle = "Vist the CoConstruct homepage";
+const logoLink = "/";
+
+const NavBar = ({ navLinks }: NavLinkProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -26,18 +35,21 @@ const NavBar = () => {
       <div className={style.navContainer}>
         {/* Logo */}
         <div className={style.navLogo}>
-          <img
-            src={logo}
-            alt="CoConstruct | Construction Management Software"
-            className={style.logo}
-          />
+          <a href={logoLink}>
+            <img
+              src={logo}
+              alt={altText}
+              title={logoTitle}
+              className={style.logo}
+            />
+          </a>
         </div>
 
         {/* Hamburger Menu */}
         <button
           className={`${style.hamburger} ${isMenuOpen ? style.active : ""}`}
           onClick={toggleMenu}
-          aria-label="Toggle navigation menu"
+          aria-label="View the navigation menu"
         >
           <span></span>
           <span></span>
@@ -50,20 +62,25 @@ const NavBar = () => {
           onClick={closeMenu}
         >
           <div className={style.navLinks}>
-            {NAV_LINKS.map((link) => (
-              <a key={link.href} href={link.href} className={style.navLink}>
-                {link.label}
+            {navLinks.map((option) => (
+              <a
+                key={option.href}
+                href={option.href}
+                aria-label={option.ariaLabel}
+                title={option.title}
+              >
+                {option.label}
               </a>
             ))}
           </div>
 
           {/* Button */}
           <Button
-            onClick={() => console.log("Sign up clicked")}
-            ariaLabel="Sign up"
-            variant="primary"
+            onClick={() => console.log("Schedule a demo clicked")}
+            ariaLabel="Schedule a demo with CoConstruct"
+            variant="secondary"
           >
-            Sign Up
+            Schedule a demo
           </Button>
         </div>
       </div>
