@@ -1,3 +1,4 @@
+import FormGroup from "../FormGroup/FormGroup";
 import style from "./FormSelect.module.css";
 
 type SelectOptionProps = {
@@ -25,7 +26,7 @@ const FormSelect = ({
   required = false,
 }: FormSelectProps) => {
   return (
-    <div className={style.formGroup}>
+    <FormGroup>
       <label htmlFor={id} className={style.formLabel}>
         {label}
         {required && <span className={style.formRequired}>*</span>}
@@ -45,7 +46,7 @@ const FormSelect = ({
           </option>
         ))}
       </select>
-    </div>
+    </FormGroup>
   );
 };
 
