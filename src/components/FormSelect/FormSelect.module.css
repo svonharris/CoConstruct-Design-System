@@ -1,7 +1,3 @@
-.formGroup {
-    display: flex;
-    flex-direction: column;
-}
 .formLabel {
     color: #6c7487;
     font-size: 14px;
