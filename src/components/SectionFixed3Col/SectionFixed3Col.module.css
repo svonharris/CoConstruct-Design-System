@@ -4,7 +4,6 @@
 }
 @media (min-width: 767px) {
   .sectionColThree {
-    display: grid;
     max-width: 800px;
     margin-inline: auto;
     column-gap: 22px;
