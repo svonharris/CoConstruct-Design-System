@@ -7,25 +7,25 @@ type ToggleSwitchProps = {
 };
 
 const ToggleSwitch = ({
-  firstLabel = "Monthly",
-  secondLabel = "Yearly",
+  firstLabel = "On",
+  secondLabel = "Off",
 }: ToggleSwitchProps) => {
-  const [isYearly, setIsYearly] = useState(false);
+  const [isSecondOptionSelected, setIsSecondOptionSelected] = useState(false);
 
-  const handleToggleSwitch = (yearly: boolean) => {
-    setIsYearly(yearly);
+  const handleToggleSwitch = (selectSecond: boolean) => {
+    setIsSecondOptionSelected(selectSecond);
   };
 
   return (
     <div className={style.toggleSwitchContainer}>
       <button
-        className={`${style.toggleSwitchBtn} ${!isYearly ? "" : style.inactive}`}
+        className={`${style.toggleSwitchBtn} ${!isSecondOptionSelected ? "" : style.inactive}`}
         onClick={() => handleToggleSwitch(false)}
       >
         {firstLabel}
       </button>
       <button
-        className={`${style.toggleSwitchBtn} ${isYearly ? "" : style.inactive}`}
+        className={`${style.toggleSwitchBtn} ${isSecondOptionSelected ? "" : style.inactive}`}
         onClick={() => handleToggleSwitch(true)}
       >
         {secondLabel}
