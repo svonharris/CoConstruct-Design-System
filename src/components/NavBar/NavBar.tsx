@@ -14,12 +14,6 @@ type NavLinkOptionProps = {
 
 type NavLinkProps = {
   navLinks: NavLinkOptionProps[];
-  //   navLinks: [
-  //     {
-  //       href: string;
-  //       label: string;
-  //     },
-  //   ];
 };
 
 const NavBar = ({ navLinks }: NavLinkProps) => {
