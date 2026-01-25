@@ -1,0 +1,33 @@
+
+.linkDefault {
+    color: #0067ee;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: var(--font-primary);
+}
+
+.linkArrow {
+    color: #0067ee;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: var(--font-primary);
+}
+.linkArrowSymbol {
+    font-weight: 900;
+    font-size: 12px;
+    padding-left: 4px;
+}
+.linkNavigation {
+  color: #2a2d34;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.linkNavigation:hover {
+  color: #979797;
+}
