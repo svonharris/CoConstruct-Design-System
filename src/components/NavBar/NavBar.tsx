@@ -3,6 +3,7 @@ import style from "./NavBar.module.css";
 import Modal from "../Modal/Modal";
 import Form from "../Form/Form";
 import Logo from "../Logo/Logo";
+import Link from "../Link/Link";
 
 type NavLinkOptionProps = {
   href: string;
@@ -51,15 +52,13 @@ const NavBar = ({ navLinks }: NavLinkProps) => {
         >
           <div className={style.navLinks}>
             {navLinks.map((option) => (
-              <a
-                className={style.navLink}
-                key={option.href}
+              <Link
                 href={option.href}
-                aria-label={option.ariaLabel}
+                label={option.label}
+                ariaLabel={option.ariaLabel}
                 title={option.title ? option.title : option.ariaLabel}
-              >
-                {option.label}
-              </a>
+                variant="navigation"
+              />
             ))}
           </div>
 
