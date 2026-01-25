@@ -15,7 +15,7 @@ function App() {
         navLinks={[
           {
             label: "How it works",
-            href: "/",
+            href: "/how-it-works",
             ariaLabel: "Go to How it works Page",
           },
           {
