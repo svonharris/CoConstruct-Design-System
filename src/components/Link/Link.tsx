@@ -1,25 +1,43 @@
 import style from "./Link.module.css";
 
-type NavLinkOptionProps = {
+type LinkVariant = "default" | "arrow" | "navigation";
+
+type LinkProps = {
   href: string;
   label: string;
   ariaLabel: string;
   title?: string;
+  variant?: LinkVariant;
 };
 
-const Link = ({ href, label, ariaLabel, title }: NavLinkOptionProps) => {
+const VARIANT_STYLES: Record<LinkVariant, string> = {
+  default: style.linkDefault,
+  arrow: style.linkArrow,
+  navigation: style.linkNavigation,
+};
+
+const Link = ({
+  href,
+  label,
+  ariaLabel,
+  title,
+  variant = "default",
+}: LinkProps) => {
   return (
-    <>
-      <a
-        className={style.navLink}
-        key={href}
-        href={href}
-        aria-label={ariaLabel}
-        title={title ? title : ariaLabel}
-      >
-        {label}
-      </a>
-    </>
+    <a
+      className={`${VARIANT_STYLES[variant]}`}
+      href={href}
+      aria-label={ariaLabel}
+      title={title ? title : ariaLabel}
+    >
+      {label}
+      {/* arrow symbol */}
+      {variant === "arrow" && (
+        <span aria-hidden="true" className={style.linkArrowSymbol}>
+          →
+        </span>
+      )}
+    </a>
   );
 };
 
