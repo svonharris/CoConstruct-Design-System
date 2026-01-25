@@ -1,0 +1,47 @@
+.Submenu {
+  position: relative;
+  display: inline-block;
+}
+
+.SubmenuToggle {
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrow {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.SubmenuToggle[aria-expanded="true"] .arrow {
+  transform: rotate(180deg);
+}
+
+.SubmenuMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-style: none;
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+  min-width: 200px;
+  z-index: 10;
+}
+
+.SubmenuItem a {
+  display: block;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+.SubmenuItem a:hover {
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
