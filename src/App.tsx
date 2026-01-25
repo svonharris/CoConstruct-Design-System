@@ -7,33 +7,73 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import Form from "./components/Form/Form";
 import Modal from "./components/Modal/Modal";
 import NavBar from "./components/NavBar/NavBar";
+import Link from "./components/Link/Link";
+import Submenu from "./components/Submenu/Submenu";
 
 function App() {
   return (
     <>
-      <NavBar
-        navLinks={[
+      <NavBar>
+        <Submenu
+          label="How it works"
+          items={[
+            {
+              label: "Features",
+              href: "/how-it-works",
+              ariaLabel: "Go to Features Page",
+            },
+            {
+              label: "Why choose us",
+              href: "/why-choose-us",
+              ariaLabel: "Go to Why choose us Page",
+            },
+          ]}
+          variant="navigation"
+        />
+        <Link
+          href="/pricing"
+          label="Pricing"
+          ariaLabel="Go to Pricing Page"
+          variant="navigation"
+        />
+        <Link
+          href="/resources"
+          label="Current Customers"
+          ariaLabel="Go to Current Customers Page"
+          variant="navigation"
+        />
+        <Link
+          href="tel:800-213-3392"
+          label="800-213-3392"
+          ariaLabel="Give us a call today"
+          variant="navigation"
+        />
+        <Modal
+          buttonLabel="Schedule a Demo"
+          ariaLabel="Open the schedule a demo form"
+          variant="primary"
+          title="Open the schedule a demo form"
+        >
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Form />
+          </div>
+        </Modal>
+      </NavBar>
+      <Submenu
+        label="It Works"
+        items={[
           {
-            label: "How it works",
+            label: "Features",
             href: "/how-it-works",
-            ariaLabel: "Go to How it works Page",
+            ariaLabel: "Go to Features Page",
           },
           {
-            label: "Pricing",
-            href: "/pricing",
-            ariaLabel: "Go to Pricing Page",
-          },
-          {
-            label: "Current Customers",
-            href: "/resources",
-            ariaLabel: "Go to Current Customers Page",
-          },
-          {
-            label: "800-213-3392",
-            href: "tel:800-213-3392",
-            ariaLabel: "Give us a call today",
+            label: "Why choose us",
+            href: "/why-choose-us",
+            ariaLabel: "Go to Why choose us Page",
           },
         ]}
+        variant="arrow"
       />
       <HeroSection
         heading="Section heading here"
