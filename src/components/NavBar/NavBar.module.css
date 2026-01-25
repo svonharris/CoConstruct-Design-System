@@ -16,15 +16,6 @@
   height: 70px;
 }
 
-.navLogo {
-  flex-shrink: 0;
-}
-
-.logo {
-  height: auto;
-  width: 185px;
-}
-
 .navMenu {
   display: flex;
   align-items: center;
