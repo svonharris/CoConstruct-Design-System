@@ -3,6 +3,7 @@ import style from "./NavBar.module.css";
 import logo from "../../assets/BT_CoConstruct_Logos_Color_Stacked.png";
 import Modal from "../Modal/Modal";
 import Form from "../Form/Form";
+import Logo from "../Logo/Logo";
 
 type NavLinkOptionProps = {
   href: string;
@@ -38,15 +39,7 @@ const NavBar = ({ navLinks }: NavLinkProps) => {
     <nav className={style.navbar}>
       <div className={style.navContainer}>
         {/* Logo */}
-        <div className={style.navLogo}>
-          <a
-            href={logoProps.href}
-            aria-label={logoProps.ariaLabel}
-            title={logoProps.title ?? logoProps.ariaLabel}
-          >
-            <img src={logo} alt={logoProps.altText} className={style.logo} />
-          </a>
-        </div>
+        <Logo />
 
         {/* Hamburger Menu */}
         <button
