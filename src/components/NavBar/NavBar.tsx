@@ -1,6 +1,5 @@
 import { useState } from "react";
 import style from "./NavBar.module.css";
-import logo from "../../assets/BT_CoConstruct_Logos_Color_Stacked.png";
 import Modal from "../Modal/Modal";
 import Form from "../Form/Form";
 import Logo from "../Logo/Logo";
