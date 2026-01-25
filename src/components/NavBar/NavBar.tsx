@@ -21,13 +21,6 @@ type NavLinkProps = {
   //   ];
 };
 
-const logoProps = {
-  href: "/",
-  altText: "CoConstruct | Construction Management Software",
-  ariaLabel: "Go to CoConstruct homepage",
-  title: "Visit the CoConstruct homepage",
-};
-
 const NavBar = ({ navLinks }: NavLinkProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
