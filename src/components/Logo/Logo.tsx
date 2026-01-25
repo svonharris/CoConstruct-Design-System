@@ -17,7 +17,7 @@ const Logo = ({
 }: LogoProps) => {
   return (
     <>
-      <a href={href} aria-label={ariaLabel} title={title ?? ariaLabel}>
+      <a href={href} aria-label={ariaLabel} title={title}>
         <img src={logo} alt={altText} style={{ width, height: "auto" }} />
       </a>
     </>
