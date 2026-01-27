@@ -1,5 +1,5 @@
 import PricingCard from "./components/PricingCard/PricingCard";
-import SectionFixed3Col from "./components/SectionFixed3Col/SectionFixed3Col";
+import SectionGrid from "./components/SectionGrid/SectionGrid";
 import Button from "./components/Button/Button";
 import Toggle from "./components/ToggleSwitch/ToggleSwitch";
 import Tabs from "./components/Tabs/Tabs";
@@ -114,7 +114,7 @@ function App() {
         Our Prices
       </Button>
       <br></br>
-      <SectionFixed3Col>
+      <SectionGrid variant="3col">
         <PricingCard
           plan="Essential"
           price="$99"
@@ -136,7 +136,7 @@ function App() {
           description="For those ready to centralize all complex processes – including selections and RFIs – into one simple platform. You’ll have the tools from Essential and Advanced, too."
           href="https://www.coconstruct.com/Signups/C302M"
         />
-      </SectionFixed3Col>
+      </SectionGrid>
       <br></br>
       <Tabs
         tabs={[
