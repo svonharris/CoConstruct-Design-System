@@ -12,7 +12,7 @@ type ButtonProps = {
 
 type ButtonVariant = "primary" | "secondary";
 
-const variantStyles: Record<ButtonVariant, string> = {
+const VARIANT_STYLES: Record<ButtonVariant, string> = {
   primary: style.primaryButton,
   secondary: style.secondaryButton,
 };
@@ -28,7 +28,7 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`${style.baseButton} ${variantStyles[variant]}`}
+      className={`${style.baseButton} ${VARIANT_STYLES[variant]}`}
       onClick={onClick}
       aria-label={ariaLabel}
       type={type}
