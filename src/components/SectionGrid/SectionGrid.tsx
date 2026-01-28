@@ -14,9 +14,9 @@ const VARIANT_STYLES: Record<SectionGridVariant, string> = {
 
 const SectionGrid = ({ children, variant = "1col" }: SectionGrid) => {
   return (
-    <div className={`${VARIANT_STYLES[variant]} ${style.section}`}>
+    <section className={`${VARIANT_STYLES[variant]} ${style.section}`}>
       {children}
-    </div>
+    </section>
   );
 };
 
