@@ -8,28 +8,12 @@ import Form from "./components/Form/Form";
 import Modal from "./components/Modal/Modal";
 import NavBar from "./components/NavBar/NavBar";
 import Link from "./components/Link/Link";
-import Submenu from "./components/Submenu/Submenu";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
       <NavBar>
-        <Submenu
-          label="How it works"
-          items={[
-            {
-              label: "Features",
-              href: "/how-it-works",
-              ariaLabel: "Go to Features Page",
-            },
-            {
-              label: "Why choose us",
-              href: "/why-choose-us",
-              ariaLabel: "Go to Why choose us Page",
-            },
-          ]}
-          variant="navigation"
-        />
         <Link
           href="/pricing"
           label="Pricing"
@@ -59,22 +43,6 @@ function App() {
           </div>
         </Modal>
       </NavBar>
-      <Submenu
-        label="It Works"
-        items={[
-          {
-            label: "Features",
-            href: "/how-it-works",
-            ariaLabel: "Go to Features Page",
-          },
-          {
-            label: "Why choose us",
-            href: "/why-choose-us",
-            ariaLabel: "Go to Why choose us Page",
-          },
-        ]}
-        variant="arrow"
-      />
       <HeroSection
         heading="Section heading here"
         subheading="Write some subheading text here."
@@ -173,6 +141,9 @@ function App() {
       />
       <br></br>
       <Form />
+      <Footer>
+        <p>&copy; Copyright 2026 CoConstruct</p>
+      </Footer>
     </>
   );
 }
