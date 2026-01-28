@@ -1,0 +1,12 @@
+.container {
+    padding: 20px;
+}
+.divider {
+    margin: 20px 0;
+    border: 1px solid rgba(155, 158, 184, 0.26);
+}
+@media screen and (min-width: 767px) {
+    .divider {
+        margin: 35px 0;
+    }
+}
