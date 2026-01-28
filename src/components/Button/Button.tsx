@@ -7,12 +7,10 @@ type ButtonProps = {
   title?: string;
   type?: "button" | "submit";
   disabled?: boolean;
-  variant?: ButtonVariant;
+  variant?: "primary" | "secondary";
 };
 
-type ButtonVariant = "primary" | "secondary";
-
-const VARIANT_STYLES: Record<ButtonVariant, string> = {
+const VARIANT_STYLES: Record<"primary" | "secondary", string> = {
   primary: style.primaryButton,
   secondary: style.secondaryButton,
 };
