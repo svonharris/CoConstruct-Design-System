@@ -147,7 +147,7 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-extra-bold: 900;
-  
+
   /* Font Size */
   --font-size-xs: 12px;      /* Extra Small */
   --font-size-sm: 14px;      /* Small */
@@ -172,6 +172,11 @@
   --letter-spacing-sm: 1.4px;
   --letter-spacing-md: 2px;
 
+  /* Text Transform */
+  --text-transform-uppercase: uppercase;
+  --text-transform-lowercase: lowercase;
+  --text-transform-capitalize: capitalize;
+  --text-transform-none: none;
 
   /* SEMANTIC TOKENS */
     /* Branding Green */
@@ -190,6 +195,22 @@
   /* --button-padding-primary: 12px 30px; */
   /* --button-padding-secondary: 10px 40px; */
 
+    /* Footer */
+  --footer-divider-border-width: 1px;
+  --footer-divider-border-style: solid;
+  --footer-divider-border-color: rgba(155, 158, 184, 0.26);
+
+    /* Form */
+  --form-label-text-color: var(--grey-cool);
+  --form-label-font-size: var(--font-size-sm);
+  --form-label-font-weight: var(--font-weight-medium);
+  --form-label-text-transform: var(--text-transform-uppercase);
+  --form-label-letter-spacing: var(--letter-spacing-sm);
+  --form-label-required-text-color: var(--green);
+  --form-label-required-symbol-size: var(--font-size-md);
+
+  --form-label-text: var(--grey-cool);
+
 }
 
 *,
@@ -201,7 +222,7 @@
 body {
   color: var(--grey-dark);
   font-family: var(--font-primary);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-weight-medium);
   font-size: var(--font-size-sm);
   margin: 0;
 }
