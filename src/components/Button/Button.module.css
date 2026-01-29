@@ -3,29 +3,31 @@
     min-width: 130px;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
-    transition: all 250ms ease;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 1px;
+    border-radius: var(--button-base-border-radius);
+    transition: all 250ms ease; /* all too broad: color 250ms ease */
+    color: var(--button-base-text-color);
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
+    letter-spacing: var(--button-letter-spacing);
     text-decoration: none;
-    font-family: proxima-nova, sans-serif;
+    font-family: var(--button-font-family);
     border: none;
 }
 
 .primaryButton {
-    background-color: #4cb53c;
+    background-color: var(--button-primary-background);
     padding: 12px 30px;
+    /* padding: var(--button-padding-primary); */
 }
 .primaryButton:hover {
-    background-color: #029f36;
+    background-color: var(--button-primary-background-hover);
 }
 
 .secondaryButton {
-    background-color: #1a1a1a;
+    background-color: var(--button-secondary-background);
     padding: 10px 40px;
+    /* padding: var(--button-padding-secondary); */
 }
 .secondaryButton:hover {
-    background-color: #3f3f3f;
+    background-color: var(--button-secondary-background-hover);
 }
