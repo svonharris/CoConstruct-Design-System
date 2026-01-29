@@ -1,5 +1,6 @@
 import logo from "../../assets/BT_CoConstruct_Logos_Color_Stacked.png";
 import icon from "../../assets/DarkGreenSquare.png";
+import Image from "../Image/Image";
 
 type LogoProps = {
   width?: string;
@@ -21,17 +22,9 @@ const Logo = ({
     <>
       <a href={href} aria-label={ariaLabel} title={title}>
         {variant === "default" ? (
-          <img
-            src={logo}
-            alt={altText}
-            style={{ width: "185px", height: "auto" }}
-          />
+          <Image src={logo} altText={altText} width="185px" height="auto" />
         ) : variant === "compact" ? (
-          <img
-            src={icon}
-            alt={altText}
-            style={{ width: "55px", height: "auto" }}
-          />
+          <Image src={icon} altText={altText} width="55px" height="auto" />
         ) : (
           ""
         )}
