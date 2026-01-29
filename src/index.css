@@ -191,7 +191,8 @@
   --button-primary-background-hover: var(--green-emerald);
   --button-secondary-background: var(--charcoal);
   --button-secondary-background-hover: var(--grey-mid);
-  --button-base-border-radius: var(--border-radius-sm);
+  --button-border-radius: var(--border-radius-sm);
+  --button-border: none;
   --button-font-size: var(--font-size-sm);
   --button-font-weight: var(--font-weight-medium);
   --button-letter-spacing: var(--letter-spacing-xs);
@@ -200,9 +201,7 @@
   /* --button-padding-secondary: 10px 40px; */
 
     /* Footer */
-  --footer-divider-border-width: 1px;
-  --footer-divider-border-style: solid;
-  --footer-divider-border-color: rgba(155, 158, 184, 0.26);
+  --footer-divider-border: 1px solid rgba(155, 158, 184, 0.26);
 
     /* Form */
   --form-label-text-color: var(--grey-cool);
@@ -219,13 +218,9 @@
   --form-field-font-family: var(--font-primary);
   --form-field-letter-spacing: var(--letter-spacing-sm);
   --form-field-border-radius: var(--border-radius-md);
-  --form-field-border-width: 1px;
-  --form-field-border-style: solid;
   --form-field-border-color: var(--transparent);
-  --form-field-border-bottom-color: var(--grey-silver);
-  --form-field-focus-width: 1px;
-  --form-field-focus-style: solid;
-  --form-field-focus-color: var(--grey);
+  --form-field-border-bottom: 1px solid var(--grey-silver);
+  --form-field-focus: 1px solid var(--grey);
 
     /* Hero Section */
   --hero-title-color: var(--grey-dark);
