@@ -212,21 +212,20 @@
   --form-label-letter-spacing: var(--letter-spacing-sm);
   --form-label-required-text-color: var(--green);
   --form-label-required-symbol-size: var(--font-size-md);
-  
-  --form-input-text-color: var(--grey);
-  --form-input-font-size: var(--font-size-sm);
-  --form-input-font-weight: var(--font-weight-medium);
-  --form-input-font-family: var(--font-primary);
-  --form-input-letter-spacing: var(--letter-spacing-sm);
-  --form-input-border-radius: var(--border-radius-md);
 
-  --form-field-focus-width: 1px;
-  --form-field-focus-style: solid;
-  --form-field-focus-color: var(--grey);
+  --form-field-text-color: var(--grey);
+  --form-field-font-size: var(--font-size-base);
+  --form-field-font-weight: var(--font-weight-medium);
+  --form-field-font-family: var(--font-primary);
+  --form-field-letter-spacing: var(--letter-spacing-sm);
+  --form-field-border-radius: var(--border-radius-md);
   --form-field-border-width: 1px;
   --form-field-border-style: solid;
   --form-field-border-color: var(--transparent);
   --form-field-border-bottom-color: var(--grey-silver);
+  --form-field-focus-width: 1px;
+  --form-field-focus-style: solid;
+  --form-field-focus-color: var(--grey);
 
 }
 
