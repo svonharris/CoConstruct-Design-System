@@ -257,6 +257,14 @@
   --link-navigation-font-weight: var(--font-weight-medium);
   --link-navigation-font-family: var(--font-primary);
 
+  /* Navigation Bar */
+  --navbar-background-color: var(--white);
+  --navbar-border: 1px solid var(--grey-pale);
+  --navbar-menu-background-color: var(--white);
+  --navbar-menu-box-shadow: -2px 10px 10px 0 rgba(118, 126, 173, 0.1);
+  --hamburger-color: var(--grey-dark);
+  --hamburger-border-radius: 2px;
+
 }
 
 *,
