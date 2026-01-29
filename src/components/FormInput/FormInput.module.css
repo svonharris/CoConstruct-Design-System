@@ -2,16 +2,23 @@
     margin-top: 5px;
     margin-bottom: 15px;
     padding: 10px;
-    color: #707070;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: var(--font-primary);
-    letter-spacing: 1.4px;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    border-bottom: 1px solid #ededed;
-    /* border: 1px solid #f2545b; */
+    color: var(--form-input-text-color);
+    font-size: var(--form-input-font-size);
+    font-weight: var(--form-input-font-weight);
+    font-family: var(--form-input-font-family);
+    letter-spacing: var(--form-input-letter-spacing);
+    border-radius: var(--form-input-border-radius);
+    border-width: var(--form-input-border-width);
+    border-style: var(--form-input-border-style);
+    border-color: var(--form-input-border-color);
+    border-bottom-color: var(--form-input-border-bottom-color);
+    /* error message
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f2545b; */
 }
 .formInput:focus-visible {
-    outline: 1px solid #707070;
+    outline-width: var(--form-input-outline-width);
+    outline-style: var(--form-input-outline-style);
+    outline-color: var(--form-input-outline-color);
 }
