@@ -127,6 +127,7 @@
   --grey: #707070;
   --grey-light: #979797;
   --grey-pale: #e3e4e6;
+  --grey-silver: #ededed;
 
   /* Greens */
   --green: #4cb53c;
@@ -208,8 +209,20 @@
   --form-label-letter-spacing: var(--letter-spacing-sm);
   --form-label-required-text-color: var(--green);
   --form-label-required-symbol-size: var(--font-size-md);
-
-  --form-label-text: var(--grey-cool);
+  
+  --form-input-text-color: var(--grey);
+  --form-input-font-size: var(--font-size-sm);
+  --form-input-font-weight: var(--font-weight-medium);
+  --form-input-font-family: var(--font-primary);
+  --form-input-letter-spacing: var(--letter-spacing-sm);
+  --form-input-border-radius: var(--border-radius-md);
+  --form-input-border-width: 1px;
+  --form-input-border-style: solid;
+  --form-input-border-color: var(--transparent);
+  --form-input-border-bottom-color: var(--grey-silver);
+  --form-input-outline-width: 1px;
+  --form-input-outline-style: solid;
+  --form-input-outline-color: var(--grey);
 
 }
 
