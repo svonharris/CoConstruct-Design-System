@@ -1,11 +1,16 @@
-type ImgProps = {
+type ImageProps = {
   src: string;
   width?: string;
   height?: string;
   altText: string;
 };
 
-const Img = ({ src, width = "100%", height = "auto", altText }: ImgProps) => {
+const Image = ({
+  src,
+  width = "100%",
+  height = "auto",
+  altText,
+}: ImageProps) => {
   return (
     <img
       src={src}
@@ -17,4 +22,4 @@ const Img = ({ src, width = "100%", height = "auto", altText }: ImgProps) => {
   );
 };
 
-export default Img;
+export default Image;
