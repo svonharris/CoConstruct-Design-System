@@ -2,12 +2,12 @@
     margin-top: 5px;
     margin-bottom: 15px;
     padding: 10px;
-    color: var(--form-input-text-color);
-    font-size: var(--form-input-font-size);
-    font-weight: var(--form-input-font-weight);
-    font-family: var(--form-input-font-family);
-    letter-spacing: var(--form-input-letter-spacing);
-    border-radius: var(--form-input-border-radius);
+    color: var(--form-field-text-color);
+    font-size: var(--form-field-font-size);
+    font-weight: var(--form-field-font-weight);
+    font-family: var(--form-field-font-family);
+    letter-spacing: var(--form-field-letter-spacing);
+    border-radius: var(--form-field-border-radius);
     border-width: var(--form-field-border-width);
     border-style: var(--form-field-border-style);
     border-color: var(--form-field-border-color);
