@@ -1,33 +1,33 @@
-
 .linkDefault {
-    color: #0067ee;
-    font-size: 16px;
-    font-weight: 400;
+    color: var(--link-default-color);
+    font-size: var(--link-default-font-size);
+    font-weight: var(--link-default-font-weight);
+    font-family: var(--link-default-font-family);
     text-decoration: none;
-    font-family: var(--font-primary);
 }
 
 .linkArrow {
-    color: #0067ee;
-    font-size: 16px;
-    font-weight: 400;
+    color: var(--link-arrow-color);
+    font-size: var(--link-arrow-font-size);
+    font-weight: var(--link-arrow-font-weight);
+    font-family: var(--link-arrow-font-family);
     text-decoration: none;
-    font-family: var(--font-primary);
 }
 .linkArrowSymbol {
-    font-weight: 900;
-    font-size: 12px;
+    font-weight: var(--link-arrow-symbol-font-weight);
+    font-size: var(--link-arrow-symbol-font-size);
     padding-left: 4px;
 }
 .linkNavigation {
-  color: #2a2d34;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: none;
+    color: var(--link-navigation-color);
+    font-size: var(--link-navigation-font-size);
+    font-weight: var(--link-navigation-font-weight);
+    font-family: var(--link-navigation-font-family);
+    text-decoration: none;
+    text-transform: none;
+    transition: color 0.3s ease;
 }
 
 .linkNavigation:hover {
-  color: #979797;
+    color: var(--link-navigation-color-hover);
 }

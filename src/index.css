@@ -238,6 +238,25 @@
   --hero-subtitle-font-weight: var(--font-weight-medium);
   --hero-subtitle-font-family: var(--font-primary);
 
+  /* Links */  
+  --link-default-color: var(--blue);
+  --link-default-font-size: var(--font-size-base);
+  --link-default-font-weight: var(--font-weight-medium);
+  --link-default-font-family: var(--font-primary);
+
+  --link-arrow-color: var(--blue);
+  --link-arrow-font-size: var(--font-size-base);
+  --link-arrow-font-weight: var(--font-weight-medium);
+  --link-arrow-font-family: var(--font-primary);
+  --link-arrow-symbol-font-weight: var(--font-weight-extra-bold);
+  --link-arrow-symbol-font-size: var(--font-size-xs);
+  
+  --link-navigation-color: var(--grey-dark);
+  --link-navigation-color-hover: var(--grey-light);
+  --link-navigation-font-size: var(--font-size-base);
+  --link-navigation-font-weight: var(--font-weight-medium);
+  --link-navigation-font-family: var(--font-primary);
+
 }
 
 *,
