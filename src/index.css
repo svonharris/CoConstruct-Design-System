@@ -227,6 +227,17 @@
   --form-field-focus-style: solid;
   --form-field-focus-color: var(--grey);
 
+    /* Hero Section */
+  --hero-title-color: var(--grey-dark);
+  --hero-title-font-size: var(--font-size-4xl);
+  --hero-title-font-weight: var(--font-weight-bold);
+  --hero-title-font-family: var(--font-primary);
+  
+  --hero-subtitle-color: var(--grey);
+  --hero-subtitle-font-size: var(--font-size-md);
+  --hero-subtitle-font-weight: var(--font-weight-medium);
+  --hero-subtitle-font-family: var(--font-primary);
+
 }
 
 *,
