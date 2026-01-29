@@ -258,7 +258,7 @@ button {
   font: inherit;
   margin: 0;
   overflow: visible;
-  text-transform: none;
+  text-transform: var(--text-transform-none);
 }
 
 button, [type='button'], [type='reset'] {
