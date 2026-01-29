@@ -13,7 +13,7 @@ const HeroSection = ({
 }: HeroSectionProps) => {
   return (
     <div
-      className={hasBackground ? style.containerBackground : style.container}
+      className={`${style.container} ${hasBackground ? style.containerBackground : ""}`}
     >
       <h1 className={style.title}>{heading}</h1>
       <p className={style.subtitle}>{subheading}</p>
