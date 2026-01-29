@@ -1,11 +1,10 @@
 .formSelect {
-    color: #707070;
-    font-size: 16px;
-    font-family: var(--font-primary);
-    font-weight: 300;
+    color: var(--form-field-text-color);
+    font-size: var(--form-field-font-size);
+    font-family: var(--form-field-font-family);
+    font-weight: var(--form-field-font-weight);
     line-height: 20px;
-    border-radius: 5px;
-    outline: none;
+    border-radius: var(--form-field-border-radius);
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
