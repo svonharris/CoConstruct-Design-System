@@ -4,19 +4,15 @@
     font-family: var(--form-field-font-family);
     font-weight: var(--form-field-font-weight);
     line-height: 20px;
-    border-radius: var(--form-field-border-radius);
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
     appearance: none;
-    border-width: var(--form-field-border-width);
-    border-style: var(--form-field-border-style);
+    border-radius: var(--form-field-border-radius);
     border-color: var(--form-field-border-color);
-    border-bottom-color: var(--form-field-border-bottom-color);
+    border-bottom: var(--form-field-border-bottom);
     /* border: 1px solid #f2545b; error message */
 }
 .formSelect:focus-visible {
-    outline-width: var(--form-field-focus-width);
-    outline-style: var(--form-field-focus-style);
-    outline-color: var(--form-field-focus-color);
+    outline: var(--form-field-focus);
 }

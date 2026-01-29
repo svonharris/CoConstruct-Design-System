@@ -8,17 +8,13 @@
     font-family: var(--form-field-font-family);
     letter-spacing: var(--form-field-letter-spacing);
     border-radius: var(--form-field-border-radius);
-    border-width: var(--form-field-border-width);
-    border-style: var(--form-field-border-style);
     border-color: var(--form-field-border-color);
-    border-bottom-color: var(--form-field-border-bottom-color);
+    border-bottom: var(--form-field-border-bottom);
     /* error message
     border-width: 1px;
     border-style: solid;
     border-color: #f2545b; */
 }
 .formInput:focus-visible {
-    outline-width: var(--form-field-focus-width);
-    outline-style: var(--form-field-focus-style);
-    outline-color: var(--form-field-focus-color);
+    outline: var(--form-field-focus);
 }

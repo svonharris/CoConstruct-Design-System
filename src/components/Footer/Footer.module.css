@@ -3,9 +3,7 @@
 }
 .divider {
     margin: 20px 0;
-    border-width: var(--footer-divider-border-width);
-    border-style: var(--footer-divider-border-style);
-    border-color: var(--footer-divider-border-color);
+    border: var(--footer-divider-border);
 }
 @media screen and (min-width: 767px) {
     .divider {

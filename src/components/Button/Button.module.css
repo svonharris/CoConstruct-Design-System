@@ -3,7 +3,7 @@
     min-width: 130px;
     justify-content: center;
     align-items: center;
-    border-radius: var(--button-base-border-radius);
+    border-radius: var(--button-border-radius);
     transition: all 250ms ease; /* all too broad: color 250ms ease */
     color: var(--button-base-text-color);
     font-size: var(--button-font-size);
@@ -11,7 +11,7 @@
     letter-spacing: var(--button-letter-spacing);
     text-decoration: none;
     font-family: var(--button-font-family);
-    border: none;
+    border: var(--button-border);
 }
 
 .primaryButton {
