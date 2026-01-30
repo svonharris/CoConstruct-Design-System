@@ -143,6 +143,10 @@
   /* Utility */
   --transparent: transparent;
 
+  /* Transitions */
+  --motion-duration-medium: 250ms;
+  --motion-easing-standard: ease;
+
   /* Fonts */
   --font-primary: proxima-nova, sans-serif;
   --font-secondary: proxima-nova-condensed, sans-serif;
@@ -185,6 +189,7 @@
   /* SEMANTIC TOKENS */
     /* Branding Green */
   --color-brand-green: var(--green);
+
     /* Buttons */
   --button-base-text-color: var(--white);
   --button-primary-background: var(--color-brand-green);
@@ -197,6 +202,7 @@
   --button-font-weight: var(--font-weight-medium);
   --button-letter-spacing: var(--letter-spacing-xs);
   --button-font-family: var(--font-primary);
+  --button-transition: background-color var(--motion-duration-medium) var(--motion-easing-standard);
   /* --button-padding-primary: 12px 30px; */
   /* --button-padding-secondary: 10px 40px; */
 
@@ -251,14 +257,17 @@
   --link-navigation-font-size: var(--font-size-base);
   --link-navigation-font-weight: var(--font-weight-medium);
   --link-navigation-font-family: var(--font-primary);
+  --link-navigation-transition: color var(--motion-duration-medium) var(--motion-easing-standard);
 
   /* Navigation Bar */
   --navbar-background-color: var(--white);
   --navbar-border: 1px solid var(--grey-pale);
   --navbar-menu-background-color: var(--white);
   --navbar-menu-box-shadow: -2px 10px 10px 0 rgba(118, 126, 173, 0.1);
+  --navbar-menu-transition: max-height var(--motion-duration-medium) var(--motion-easing-standard);
   --hamburger-color: var(--grey-dark);
   --hamburger-border-radius: 2px;
+  --hamburger-transition: transform var(--motion-duration-medium) var(--motion-easing-standard);
 
   /* Pricing Card */
   --pricing-card-border: 1px solid var(--grey-pale);
@@ -305,6 +314,7 @@
   --toggle-button-inactive-color: var(--grey-dark);
   --toggle-button-inactive-font-weight: var(--font-weight-medium);
   --toggle-button-letter-spacing: var(--letter-spacing-xs);
+  --toggle-button-transition: background-color var(--motion-duration-medium) var(--motion-easing-standard), color var(--motion-duration-medium) var(--motion-easing-standard);
 
 }
 
