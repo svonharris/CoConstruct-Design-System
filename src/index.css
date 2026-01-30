@@ -260,6 +260,29 @@
   --hamburger-color: var(--grey-dark);
   --hamburger-border-radius: 2px;
 
+  /* Pricing Card */
+  --pricing-card-border: 1px solid var(--grey-pale);
+  --pricing-card-border-radius: var(--border-radius-lg);
+
+  --pricing-card-title-color: var(--black);
+  --pricing-card-title-font-size: var(--font-size-lg);
+  --pricing-card-title-font-weight: var(--font-weight-bold);
+  --pricing-card-title-letter-spacing: var(--letterSpacing-xs);
+  --pricing-card-title-text-transform: uppercase;
+
+  --pricing-card-amount-color: var(--black);
+  --pricing-card-amount-font-size: var(--font-size-3xl);
+  --pricing-card-amount-font-weight: var(--font-weight-bold);
+
+  --pricing-card-frequency-color: var(--grey);
+  --pricing-card-frequency-font-size: var(--font-size-md);
+  --pricing-card-frequency-font-weight: var(--font-weight-medium);
+
+  --pricing-card-subtitle-color: var(--grey);
+  --pricing-card-subtitle-font-size: var(--font-size-base);
+  --pricing-card-subtitle-font-style: italic;
+  --pricing-card-subtitle-font-weight: var(--font-weight-semibold);
+
 }
 
 *,
