@@ -239,7 +239,7 @@
   --hero-subtitle-font-weight: var(--font-weight-medium);
   --hero-subtitle-font-family: var(--font-primary);
 
-  /* Links */  
+    /* Links */  
   --link-default-color: var(--blue);
   --link-default-font-size: var(--font-size-base);
   --link-default-font-weight: var(--font-weight-medium);
@@ -259,7 +259,7 @@
   --link-navigation-font-family: var(--font-primary);
   --link-navigation-transition: color var(--motion-duration-medium) var(--motion-easing-standard);
 
-  /* Navigation Bar */
+    /* Navigation Bar */
   --navbar-background-color: var(--white);
   --navbar-border: 1px solid var(--grey-pale);
   --navbar-menu-background-color: var(--white);
@@ -269,7 +269,7 @@
   --hamburger-border-radius: 2px;
   --hamburger-transition: transform var(--motion-duration-medium) var(--motion-easing-standard);
 
-  /* Pricing Card */
+    /* Pricing Card */
   --pricing-card-border: 1px solid var(--grey-pale);
   --pricing-card-border-radius: var(--border-radius-lg);
 
@@ -292,7 +292,7 @@
   --pricing-card-subtitle-font-style: italic;
   --pricing-card-subtitle-font-weight: var(--font-weight-semibold);
 
-  /* Tabs */
+    /* Tabs */
   --tabs-font-weight: var(--font-weight-bold);
   --tabs-background-color: var(--transparent);
   --tabs-color: var(--grey);
@@ -301,7 +301,7 @@
   --tabs-text-transform: var(--text-transform-uppercase);
   --tabs-active-border-bottom: 4px solid var(--grey-dark);
 
-  /* Toggle Switch */
+    /* Toggle Switch */
   --toggle-container-border: 1px solid var(--grey-pale);
   --toggle-container-border-radius: var(--border-radius-xl);
   --toggle-container-background-color: var(--white);
