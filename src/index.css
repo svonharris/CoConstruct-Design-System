@@ -283,6 +283,15 @@
   --pricing-card-subtitle-font-style: italic;
   --pricing-card-subtitle-font-weight: var(--font-weight-semibold);
 
+  /* Tabs */
+  --tabs-font-weight: var(--font-weight-bold);
+  --tabs-background-color: var(--transparent);
+  --tabs-color: var(--grey);
+  --tabs-font-size: var(--font-size-base);
+  --tabs-letter-spacing: var(--letter-spacing-md);
+  --tabs-text-transform: var(--text-transform-uppercase);
+  --tabs-active-border-bottom: 4px solid var(--grey-dark);
+
 }
 
 *,
