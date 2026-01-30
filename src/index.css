@@ -292,6 +292,20 @@
   --tabs-text-transform: var(--text-transform-uppercase);
   --tabs-active-border-bottom: 4px solid var(--grey-dark);
 
+  /* Toggle Switch */
+  --toggle-container-border: 1px solid var(--grey-pale);
+  --toggle-container-border-radius: var(--border-radius-xl);
+  --toggle-container-background-color: var(--white);
+
+  --toggle-button-border-radius: var(--border-radius-xl);
+  --toggle-button-active-background-color: var(--green-mint);
+  --toggle-button-active-color: var(--green-emerald);
+  --toggle-button-active-font-weight: var(--font-weight-semibold);
+  --toggle-button-inactive-background-color: var(--transparent);
+  --toggle-button-inactive-color: var(--grey-dark);
+  --toggle-button-inactive-font-weight: var(--font-weight-medium);
+  --toggle-button-letter-spacing: var(--letter-spacing-xs);
+
 }
 
 *,

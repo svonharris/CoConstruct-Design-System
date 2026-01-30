@@ -4,9 +4,9 @@
     height: 42px;
     padding: 4px 5px;
     justify-content: space-between;
-    border: 1px solid #e3e4e6;
-    border-radius: 21px;
-    background-color: #fff;
+    border: var(--toggle-container-border);
+    border-radius: var(--toggle-container-border-radius);
+    background-color: var(--toggle-container-background-color);
 }
 
 .toggleSwitchBtn {
@@ -14,16 +14,17 @@
     width: 108px;
     justify-content: center;
     align-items: center;
-    border-radius: 21px;
-    background-color: #d2ebd9;
-    color: #029f36;
+    border-radius: var(--toggle-button-border-radius);
+    background-color: var(--toggle-button-active-background-color);
+    color: var(--toggle-button-active-color);
     line-height: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-weight: var(--toggle-button-active-font-weight);
+    letter-spacing: var(--toggle-button-letter-spacing);
+    transition: background-color 250ms ease, color 250ms ease;
 }
 
 .inactive {
-    background-color: transparent;
-    color: #2a2d34;
-    font-weight: 400;
+    background-color: var(--toggle-button-inactive-background-color);
+    color: var(--toggle-button-inactive-color);
+    font-weight: var(--toggle-button-inactive-font-weight);
 }
