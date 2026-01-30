@@ -40,12 +40,12 @@
   width: 25px;
   height: 3px;
   background-color: var(--hamburger-color);
-  transition: 0.3s ease;
+  transition: varl(--hamburger-transition);
   border-radius: var(--hamburger-border-radius);
 }
 
 .hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(10px, 10px);
+  transform: rotate(45deg) translate(6px, 3px);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -53,7 +53,7 @@
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+  transform: rotate(-45deg) translate(9px, -6px);
 }
 
 /* Mobile Styles */
@@ -76,7 +76,7 @@
     gap: 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: var(--navbar-menu-transition);
     padding: 0 20px;
   }
 

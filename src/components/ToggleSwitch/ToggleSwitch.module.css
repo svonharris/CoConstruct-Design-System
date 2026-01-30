@@ -20,7 +20,7 @@
     line-height: 14px;
     font-weight: var(--toggle-button-active-font-weight);
     letter-spacing: var(--toggle-button-letter-spacing);
-    transition: background-color 250ms ease, color 250ms ease;
+    transition: var(--toggle-button-transition);
 }
 
 .inactive {

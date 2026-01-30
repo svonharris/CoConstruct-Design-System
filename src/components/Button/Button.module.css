@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     border-radius: var(--button-border-radius);
-    transition: all 250ms ease; /* all too broad: color 250ms ease */
+    transition: var(--button-transition);
     color: var(--button-base-text-color);
     font-size: var(--button-font-size);
     font-weight: var(--button-font-weight);
