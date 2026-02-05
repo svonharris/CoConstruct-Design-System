@@ -10,8 +10,7 @@ type NavBarProps = {
 const NavBar = ({ children, showHamburger = true }: NavBarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const closeMenu = () => setIsMenuOpen(false);
+  const handleToggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <nav className={style.navbar}>
@@ -23,7 +22,7 @@ const NavBar = ({ children, showHamburger = true }: NavBarProps) => {
         {showHamburger && (
           <button
             className={`${style.hamburger} ${isMenuOpen ? style.active : ""}`}
-            onClick={toggleMenu}
+            onClick={handleToggleMenu}
             aria-label="View the menu"
           >
             <span></span>
@@ -33,10 +32,7 @@ const NavBar = ({ children, showHamburger = true }: NavBarProps) => {
         )}
 
         {/* Navigation Content */}
-        <div
-          className={`${style.navMenu} ${isMenuOpen ? style.active : ""}`}
-          onClick={closeMenu}
-        >
+        <div className={`${style.navMenu} ${isMenuOpen ? style.active : ""}`}>
           {children}
         </div>
       </div>
