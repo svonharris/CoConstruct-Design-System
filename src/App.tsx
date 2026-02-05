@@ -75,7 +75,6 @@ function App() {
         onClick={() => {
           window.location.href = "/pricing";
         }}
-        ariaLabel="Go to Pricing Page"
         variant="secondary"
         title="View pricing page"
       >
@@ -130,7 +129,6 @@ function App() {
                 }}
                 ariaLabel="Go to Pricing Page"
                 variant="secondary"
-                title="View pricing page"
               >
                 This is a Tab with a Button
               </Button>

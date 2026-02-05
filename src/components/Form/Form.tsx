@@ -128,7 +128,6 @@ const Form = () => {
         type="submit"
         variant="primary"
         onClick={() => console.log("Submit button clicked")}
-        ariaLabel="Fill out the contact form"
         title="Contact form"
       >
         Submit
