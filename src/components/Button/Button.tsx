@@ -19,7 +19,7 @@ const Button = ({
   onClick,
   title,
   type = "button",
-  disabled,
+  disabled = false,
   variant = "primary",
 }: ButtonProps) => {
   return (
