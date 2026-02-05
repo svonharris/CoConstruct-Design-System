@@ -52,7 +52,6 @@ function App() {
 
       <Modal
         buttonLabel="Schedule a Demo"
-        ariaLabel="Open the schedule a demo form"
         variant="secondary"
         title="Open the schedule a demo form"
       >
@@ -126,7 +125,6 @@ function App() {
                 onClick={() => {
                   window.location.href = "/pricing";
                 }}
-                ariaLabel="Go to Pricing Page"
                 variant="secondary"
               >
                 This is a Tab with a Button
