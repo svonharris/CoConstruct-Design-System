@@ -5,18 +5,11 @@ import Button from "../Button/Button";
 type ModalProps = {
   children: React.ReactNode;
   buttonLabel: string;
-  ariaLabel: string;
   title?: string;
   variant?: "primary" | "secondary";
 };
 
-const Modal = ({
-  children,
-  buttonLabel,
-  ariaLabel,
-  title,
-  variant,
-}: ModalProps) => {
+const Modal = ({ children, buttonLabel, title, variant }: ModalProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => setIsOpen(true);
@@ -24,12 +17,7 @@ const Modal = ({
 
   return (
     <>
-      <Button
-        onClick={openModal}
-        ariaLabel={ariaLabel}
-        title={title}
-        variant={variant}
-      >
+      <Button onClick={openModal} title={title} variant={variant}>
         {buttonLabel}
       </Button>
 

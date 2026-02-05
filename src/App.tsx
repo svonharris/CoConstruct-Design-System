@@ -34,7 +34,6 @@ function App() {
         />
         <Modal
           buttonLabel="Schedule a Demo"
-          ariaLabel="Open the schedule a demo form"
           variant="primary"
           title="Open the schedule a demo form"
         >
