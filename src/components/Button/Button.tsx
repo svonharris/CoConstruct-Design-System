@@ -1,11 +1,17 @@
 import style from "./Button.module.css";
 
 type ButtonProps = {
+  /** Children to be rendered inside the button. */
   children: React.ReactNode;
+  /** Click handler. */
   onClick: () => void;
+  /** Title attribute for the button. */
   title?: string;
+  /** Button type attribute. */
   type?: "button" | "submit";
+  /** Set button as disabled. */
   disabled?: boolean;
+  /** Style of the button. */
   variant?: "primary" | "secondary";
 };
 
@@ -14,6 +20,7 @@ const VARIANT_STYLES: Record<"primary" | "secondary", string> = {
   secondary: style.secondaryButton,
 };
 
+/** Button component for user interaction. */
 const Button = ({
   children,
   onClick,
