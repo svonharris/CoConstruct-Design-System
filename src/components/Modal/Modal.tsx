@@ -30,7 +30,11 @@ const Modal = ({ children, buttonLabel, title, variant }: ModalProps) => {
             aria-modal="true"
             aria-labelledby="modal-title"
           >
-            <button className={styles.closeBtn} onClick={closeModal}>
+            <button
+              className={styles.closeBtn}
+              onClick={closeModal}
+              aria-label="Close Modal"
+            >
               +
             </button>
             {children}
