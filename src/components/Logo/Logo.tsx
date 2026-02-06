@@ -12,6 +12,7 @@ type LogoProps = {
 };
 
 const Logo = ({
+  width,
   href = "/",
   altText = "CoConstruct | Construction Management Software",
   ariaLabel = "Go to CoConstruct homepage",
@@ -22,9 +23,19 @@ const Logo = ({
     <>
       <a href={href} aria-label={ariaLabel} title={title}>
         {variant === "default" ? (
-          <Image src={logo} altText={altText} width="185px" height="auto" />
+          <Image
+            src={logo}
+            altText={altText}
+            width={width ? width : "185px"}
+            height="auto"
+          />
         ) : variant === "compact" ? (
-          <Image src={icon} altText={altText} width="55px" height="auto" />
+          <Image
+            src={icon}
+            altText={altText}
+            width={width ? width : "55px"}
+            height="auto"
+          />
         ) : (
           ""
         )}
