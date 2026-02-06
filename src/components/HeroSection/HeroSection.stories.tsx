@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import HeroSection from "./HeroSection";
 
 const meta = {
-  title: "Components/HeroSection",
+  title: "Components/Hero Section",
   component: HeroSection,
   argTypes: {
     hasBackground: {
