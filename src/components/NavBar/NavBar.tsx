@@ -32,7 +32,9 @@ const NavBar = ({ children, showHamburger = true }: NavBarProps) => {
         )}
 
         {/* Navigation Content */}
-        <div className={`${style.navMenu} ${isMenuOpen ? style.active : ""}`}>
+        <div
+          className={`${style.navMenu} ${showHamburger ? `${style.hamburgerVisible} ${isMenuOpen ? style.active : ""}` : ""}`}
+        >
           {children}
         </div>
       </div>
