@@ -4,9 +4,12 @@ import Image from "./Image";
 const meta = {
   title: "Components/Image",
   component: Image,
+  args: {
+    src: "../src/assets/BT_CoConstruct_Logos_Color_Stacked.png",
+    width: "500px",
+    height: "auto",
+  },
   argTypes: {
-    width: { control: "text" },
-    height: { control: "text" },
     altText: { control: false }, //renders prop documentation without a control
   },
 } satisfies Meta<typeof Image>;
@@ -14,8 +17,4 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof Image>;
 
-export const Default: Story = {
-  args: {
-    src: "../src/assets/BT_CoConstruct_Logos_Color_Stacked.png",
-  },
-};
+export const Default: Story = {};
