@@ -18,7 +18,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof NavBar>;
 
-export const EmptyNavBar: Story = {
+export const NoContent: Story = {
   args: {
     showHamburger: false,
   },
