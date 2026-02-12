@@ -18,7 +18,7 @@ const meta = {
       control: false,
     },
     title: {
-      table: { disable: true }, //removes prop control
+      control: false,
     },
     width: {
       control: "text",
