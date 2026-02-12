@@ -8,11 +8,11 @@ const meta = {
     variant: {
       control: false, //renders prop documentation without a control
     },
-    href: {
-      //   control: false, //renders prop documentation without a control
+    ariaLabel: {
+      control: false,
     },
     title: {
-      table: { disable: true }, //removes prop control
+      control: false,
     },
   },
 } satisfies Meta<typeof Link>;
@@ -22,27 +22,24 @@ type Story = StoryObj<typeof Link>;
 
 export const Default: Story = {
   args: {
-    href: "#",
+    href: "/?path=/story/components-link--default",
     label: "Default Link",
-    // ariaLabel: "Default Link",
     variant: "default",
   },
 };
 
 export const Arrow: Story = {
   args: {
-    href: "#",
+    href: "/?path=/story/components-link--arrow",
     label: "Arrow Link",
-    // ariaLabel: "Arrow Link",
     variant: "arrow",
   },
 };
 
 export const Navigation: Story = {
   args: {
-    href: "#",
+    href: "/?path=/story/components-link--navigation",
     label: "Navigation Link",
-    // ariaLabel: "Navigation Link",
     variant: "navigation",
   },
 };
