@@ -10,7 +10,7 @@ const meta = {
       control: false, //renders prop documentation without a control
     },
     children: {
-      //   control: "text",
+      control: "text",
     },
   },
 } satisfies Meta<typeof NavBar>;
@@ -18,11 +18,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof NavBar>;
 
-export const NoContent: Story = {
-  args: {
-    showHamburger: false,
-  },
-};
+export const NoContent: Story = {};
 
 export const WithContent: Story = {
   args: {
@@ -30,7 +26,7 @@ export const WithContent: Story = {
       <>
         <Link
           href="/"
-          label="Link"
+          label="Pricing"
           ariaLabel="Go to Pricing Page"
           variant="navigation"
         />
@@ -53,13 +49,7 @@ export const WithContent: Story = {
 
 export const WithContentNoHamburger: Story = {
   args: {
+    ...WithContent.args,
     showHamburger: false,
-    children: "A landing page header",
   },
 };
-
-// export const Mobile: Story = {
-//   args: {
-//     showHamburger: true,
-//   },
-// };
