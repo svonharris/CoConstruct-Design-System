@@ -2,18 +2,18 @@ import style from "./Link.module.css";
 
 type LinkVariant = "default" | "arrow" | "navigation";
 
+const VARIANT_STYLES: Record<LinkVariant, string> = {
+  default: style.linkDefault,
+  arrow: style.linkArrow,
+  navigation: style.linkNavigation,
+};
+
 type LinkProps = {
   href: string;
   label: string;
   ariaLabel: string;
   title?: string;
   variant?: LinkVariant;
-};
-
-const VARIANT_STYLES: Record<LinkVariant, string> = {
-  default: style.linkDefault,
-  arrow: style.linkArrow,
-  navigation: style.linkNavigation,
 };
 
 const Link = ({
