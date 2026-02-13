@@ -7,6 +7,7 @@ const meta = {
   args: {
     label: "First Name",
     value: "Charlie",
+    required: true,
   },
   argTypes: {
     id: {
@@ -21,9 +22,6 @@ const meta = {
     },
     onChange: {
       table: { disable: true },
-    },
-    required: {
-      control: false,
     },
   },
 } satisfies Meta<typeof FormInput>;
