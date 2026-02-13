@@ -25,6 +25,7 @@ const meta = {
       description: "Fires when the button is pressed.",
     },
   },
+  excludeStories: ["PlaygroundDocs"],
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -65,13 +66,4 @@ export const PlaygroundDocs: Story = {
       control: "boolean",
     },
   },
-  parameters: {
-    options: { showPanel: false },
-    layout: "centered",
-    docs: {
-      disable: false, // allow in docs
-    },
-    docsOnly: true, // hide from story list
-  },
-  tags: ["docs-only"],
 };
