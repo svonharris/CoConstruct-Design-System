@@ -219,10 +219,9 @@
   --form-label-required-symbol-size: var(--font-size-md);
 
   --form-field-text-color: var(--grey);
-  --form-field-font-size: var(--font-size-base);
+  --form-field-font-size: var(--font-size-sm);
   --form-field-font-weight: var(--font-weight-medium);
   --form-field-font-family: var(--font-primary);
-  --form-field-letter-spacing: var(--letter-spacing-sm);
   --form-field-border-radius: var(--border-radius-md);
   --form-field-border-color: var(--transparent);
   --form-field-border-bottom: 1px solid var(--grey-silver);
