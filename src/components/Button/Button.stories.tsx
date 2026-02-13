@@ -9,15 +9,20 @@ const meta = {
   argTypes: {
     variant: {
       control: false, //renders prop documentation without a control
+      description: "Determines the visual style of the button.",
     },
     disabled: {
       control: false,
+      description: "Disables the button and prevents user interaction.",
     },
     title: {
       table: { disable: true }, //removes prop control
     },
     type: {
       table: { disable: true },
+    },
+    onClick: {
+      description: "Fires when the button is pressed.",
     },
   },
 } satisfies Meta<typeof Button>;
@@ -44,4 +49,29 @@ export const Disabled: Story = {
     children: "Disabled Button",
     disabled: true,
   },
+};
+
+export const PlaygroundDocs: Story = {
+  args: {
+    children: "Button",
+    variant: "primary",
+    disabled: false,
+  },
+  argTypes: {
+    variant: {
+      control: "radio",
+    },
+    disabled: {
+      control: "boolean",
+    },
+  },
+  parameters: {
+    options: { showPanel: false },
+    layout: "centered",
+    docs: {
+      disable: false, // allow in docs
+    },
+    docsOnly: true, // hide from story list
+  },
+  tags: ["docs-only"],
 };
