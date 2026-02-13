@@ -10,6 +10,7 @@ const meta = {
   argTypes: {
     children: {
       control: "text",
+      description: "Content to be displayed inside the footer",
     },
   },
 } satisfies Meta<typeof Footer>;
@@ -17,5 +18,4 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof Footer>;
 
-/** Default Footer design and code. */
 export const Default: Story = {};

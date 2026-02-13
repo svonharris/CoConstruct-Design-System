@@ -2,7 +2,6 @@ import style from "./Footer.module.css";
 import Logo from "../Logo/Logo";
 
 type FooterProps = {
-  /** Content to be displayed inside the footer. */
   children?: React.ReactNode;
 };
 
