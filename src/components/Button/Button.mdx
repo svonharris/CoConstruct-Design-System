@@ -1,17 +1,23 @@
-import { Canvas, Meta } from '@storybook/addon-docs/blocks';
+import { Canvas, Meta, Controls } from '@storybook/addon-docs/blocks';
  
 import * as ButtonStories from './Button.stories';
  
 <Meta of={ButtonStories} />
- 
+
 # Button
- 
+
 Allows the user to perform an action.
 
 ## Guidelines
 
 - Do not use a Button to link to another page. Use a [Standalone Link](/story/components-link--navigation) or a [Call to Action Link](/story/components-link--arrow) instead, or an [inline Link](/story/components-link--default) in the running text.
 - Describe the Button’s function through a short label.
+
+## Props
+
+<Canvas of={ButtonStories.PlaygroundDocs} />
+
+<Controls of={ButtonStories.PlaygroundDocs} />
 
 ## Examples
 
