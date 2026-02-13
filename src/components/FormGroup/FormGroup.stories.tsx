@@ -3,7 +3,7 @@ import FormGroup from "./FormGroup";
 import style from "../FormInput/FormInput.module.css";
 
 const meta = {
-  title: "Components/FormGroup",
+  title: "Components/Form Grouping",
   component: FormGroup,
   args: {
     id: "firstName",
