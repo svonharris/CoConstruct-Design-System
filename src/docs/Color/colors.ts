@@ -1,0 +1,18 @@
+export const brandColors = [
+  "black",
+  "white",
+  "white-off",
+  "charcoal",
+  "grey-dark",
+  "grey-mid",
+  "grey-cool",
+  "grey",
+  "grey-light",
+  "grey-pale",
+  "grey-silver",
+  "green",
+  "green-emerald",
+  "green-mint",
+  "blue",
+  "red",
+];
