@@ -25,7 +25,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-/** Primary Button design and code. */
 export const Primary: Story = {
   args: {
     children: "Primary Button",
@@ -33,7 +32,6 @@ export const Primary: Story = {
   },
 };
 
-/** Secondary Button design and code. */
 export const Secondary: Story = {
   args: {
     children: "Secondary Button",
@@ -41,7 +39,6 @@ export const Secondary: Story = {
   },
 };
 
-/** Disabled Button design and code. */
 export const Disabled: Story = {
   args: {
     children: "Disabled Button",
