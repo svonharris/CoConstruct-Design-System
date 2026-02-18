@@ -6,8 +6,8 @@ const meta = {
   title: "Internal/Playground/Form Grouping", // hide in internal section
   component: FormGroup,
   args: {
-    id: "firstName",
-    label: "First Name",
+    id: "companyName",
+    label: "Company Name",
     required: true,
   },
   argTypes: {
@@ -41,7 +41,7 @@ export const PlaygroundDocs: Story = {
         type="text"
         id={args.id}
         name={args.id}
-        defaultValue="Smith"
+        defaultValue="Acme Corp"
         className={style.formInput}
         required={args.required}
       />
