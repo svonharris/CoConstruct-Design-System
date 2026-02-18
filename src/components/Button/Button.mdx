@@ -1,7 +1,8 @@
-import { Canvas, Meta, Controls } from '@storybook/addon-docs/blocks';
- 
-import * as ButtonStories from './Button.stories';
- 
+import { Canvas, Meta, Controls } from "@storybook/addon-docs/blocks";
+
+import * as PlaygroundStories from "./Button.playground.stories";
+import * as ButtonStories from "./Button.stories";
+
 <Meta of={ButtonStories} />
 
 # Button
@@ -15,9 +16,8 @@ Allows the user to perform an action.
 
 ## Props
 
-<Canvas of={ButtonStories.PlaygroundDocs} />
-
-<Controls of={ButtonStories.PlaygroundDocs} />
+<Canvas of={PlaygroundStories.PlaygroundDocs} />
+<Controls of={PlaygroundStories.PlaygroundDocs} />
 
 ## Examples
 
