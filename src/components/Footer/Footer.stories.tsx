@@ -10,7 +10,6 @@ const meta = {
   argTypes: {
     children: {
       control: "text",
-      description: "Content to be displayed inside the footer",
     },
   },
 } satisfies Meta<typeof Footer>;
