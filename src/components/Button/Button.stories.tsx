@@ -9,20 +9,15 @@ const meta = {
   argTypes: {
     variant: {
       control: false, //renders prop documentation without a control
-      description: "Determines the visual style of the button.",
     },
     disabled: {
       control: false,
-      description: "Disables the button and prevents user interaction.",
     },
     title: {
       table: { disable: true }, //removes prop control
     },
     type: {
       table: { disable: true },
-    },
-    onClick: {
-      description: "Fires when the button is pressed.",
     },
   },
 } satisfies Meta<typeof Button>;
