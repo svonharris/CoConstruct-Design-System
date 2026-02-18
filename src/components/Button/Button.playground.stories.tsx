@@ -4,6 +4,25 @@ import Button from "./Button";
 const meta = {
   title: "Internal/Playground/Button", // hide in internal section
   component: Button,
+  argTypes: {
+    children: { description: "The content to be displayed inside the button." },
+    variant: {
+      description: "Determines the visual style of the button.",
+    },
+    disabled: {
+      description: "Disables the button and prevents user interaction.",
+    },
+    title: {
+      description:
+        "Additional information about the button, often used for accessibility and tooltip.",
+    },
+    type: {
+      description: "Specifies the type of the button.",
+    },
+    onClick: {
+      description: "Fires when the button is pressed.",
+    },
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -22,5 +41,6 @@ export const PlaygroundDocs: Story = {
     disabled: {
       control: "boolean",
     },
+    title: { control: false },
   },
 };
