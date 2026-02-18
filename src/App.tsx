@@ -79,7 +79,7 @@ function App() {
         Our Prices
       </Button>
       <br></br>
-      <SectionGrid variant="3col">
+      <SectionGrid variant="col3">
         <PricingCard
           plan="Essential"
           price="$99"

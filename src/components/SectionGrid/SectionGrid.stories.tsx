@@ -33,13 +33,13 @@ export default meta;
 type Story = StoryObj<typeof SectionGrid>;
 
 export const OneColumn: Story = {
-  args: { variant: "1col" },
+  args: { variant: "col1" },
 };
 
 export const TwoColumn: Story = {
-  args: { variant: "2col" },
+  args: { variant: "col2" },
 };
 
 export const ThreeColumn: Story = {
-  args: { variant: "3col" },
+  args: { variant: "col3" },
 };
