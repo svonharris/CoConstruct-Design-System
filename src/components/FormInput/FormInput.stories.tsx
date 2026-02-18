@@ -5,6 +5,8 @@ const meta = {
   title: "Components/Form Input",
   component: FormInput,
   args: {
+    id: "lastName",
+    name: "lastName",
     label: "First Name",
     value: "Charlie",
     required: true,
