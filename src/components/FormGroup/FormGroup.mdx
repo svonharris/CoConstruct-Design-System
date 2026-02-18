@@ -1,0 +1,35 @@
+import { Canvas, Meta, Controls } from "@storybook/addon-docs/blocks";
+
+import * as FormGroupStories from "./FormGroup.stories";
+import * as PlaygroundStories from "./FormGroup.playground.stories";
+
+<Meta of={FormGroupStories} />
+
+# Form Group
+
+Groups a form control with its associated label.
+
+## Guidelines
+
+- Use clear and concise labels that describe the expected input.
+- Mark required fields only when input is mandatory.
+- Only use to wrap a single input.
+
+## Props
+
+<Canvas of={PlaygroundStories.PlaygroundDocs} />
+<Controls of={PlaygroundStories.PlaygroundDocs} />
+
+## Examples
+
+### Default
+
+Use the default Form Group to pair a label with a single input control.
+
+<Canvas of={FormGroupStories.Default} />
+
+### With Required
+
+A Form Group can indicate if the contained input is required.
+
+<Canvas of={FormGroupStories.Required} />
