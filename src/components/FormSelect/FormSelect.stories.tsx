@@ -5,6 +5,8 @@ const meta = {
   title: "Components/Form Select",
   component: FormSelect,
   args: {
+    id: "builderType",
+    name: "builderType",
     label: "Which builder type best describes your business?",
     options: [
       { value: "residentials", label: "Residential" },
@@ -35,15 +37,19 @@ type Story = StoryObj<typeof FormSelect>;
 
 export const Default: Story = {
   args: {
-    options: [{
-      "value": "residentials",
-      "label": "Residfwefewfewfential"
-    }, {
-      "value": "commercial",
-      "label": "Commercial"
-    }, {
-      "value": "industrial",
-      "label": "Industrial"
-    }],
+    options: [
+      {
+        value: "residentials",
+        label: "Residentials",
+      },
+      {
+        value: "commercial",
+        label: "Commercial",
+      },
+      {
+        value: "industrial",
+        label: "Industrial",
+      },
+    ],
   },
 };
