@@ -1,6 +1,7 @@
-import { Canvas, Meta, Controls } from '@storybook/addon-docs/blocks';
- 
+import { Canvas, Meta, Controls } from "@storybook/addon-docs/blocks";
+
 import * as FooterStories from './Footer.stories';
+import * as PlaygroundStories from "./Footer.playground.stories";
  
 <Meta of={FooterStories} />
  
@@ -15,5 +16,5 @@ Provides service information at the bottom of every page.
 
 ## Props
 
-<Canvas of={FooterStories.Default} />
-<Controls of={FooterStories.Default} />
+<Canvas of={PlaygroundStories.PlaygroundDocs} />
+<Controls of={PlaygroundStories.PlaygroundDocs} />
