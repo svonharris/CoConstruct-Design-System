@@ -25,7 +25,6 @@ const meta = {
       description: "Fires when the button is pressed.",
     },
   },
-  excludeStories: ["PlaygroundDocs"],
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -49,21 +48,5 @@ export const Disabled: Story = {
   args: {
     children: "Disabled Button",
     disabled: true,
-  },
-};
-
-export const PlaygroundDocs: Story = {
-  args: {
-    children: "Button",
-    variant: "primary",
-    disabled: false,
-  },
-  argTypes: {
-    variant: {
-      control: "radio",
-    },
-    disabled: {
-      control: "boolean",
-    },
   },
 };
