@@ -24,10 +24,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof HeroSection>;
 
-/** Hero Section without a background. */
 export const Default: Story = {};
 
-/** Hero Section with a background design. */
 export const WithBackground: Story = {
   args: {
     hasBackground: true,
