@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import FormGroup from "./FormGroup";
-import style from "../FormInput/FormInput.module.css";
+import FormInput from "../FormInput/FormInput";
 
 const meta = {
   title: "Internal/Playground/Form Grouping", // hide in internal section
@@ -36,15 +36,13 @@ type Story = StoryObj<typeof FormGroup>;
 
 export const PlaygroundDocs: Story = {
   render: (args) => (
-    <FormGroup {...args}>
-      <input
-        type="text"
-        id={args.id}
-        name={args.id}
-        defaultValue="Acme Corp"
-        className={style.formInput}
-        required={args.required}
-      />
-    </FormGroup>
+    <FormInput
+      id={args.id}
+      name={args.id}
+      label={args.label}
+      value="Acme Corp"
+      required={args.required}
+      onChange={() => {}}
+    />
   ),
 };
