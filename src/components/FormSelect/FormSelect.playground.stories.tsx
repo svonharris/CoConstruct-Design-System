@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import FormSelect from "./FormSelect";
+import { useArgs } from "storybook/preview-api";
 
 const meta = {
   title: "Internal/Playground/Form Select", // hide in internal section
@@ -52,4 +53,14 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof FormSelect>;
 
-export const PlaygroundDocs: Story = {};
+export const PlaygroundDocs: Story = {
+  render: (args) => {
+    const [{ value }, updateArgs] = useArgs();
+
+    const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+      updateArgs({ value: e.target.value });
+    };
+
+    return <FormSelect {...args} value={value} onChange={handleChange} />;
+  },
+};
