@@ -36,6 +36,7 @@ export const Default: Story = {
         value="Janice"
         className={style.formInput}
         required={args.required}
+        onChange={() => {}}
       />
     </FormGroup>
   ),
@@ -56,6 +57,7 @@ export const Required: Story = {
         value="Smith"
         className={style.formInput}
         required={args.required}
+        onChange={() => {}}
       />
     </FormGroup>
   ),
