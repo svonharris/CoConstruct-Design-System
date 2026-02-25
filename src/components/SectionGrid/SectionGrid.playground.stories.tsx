@@ -22,7 +22,8 @@ const meta = {
   },
   argTypes: {
     variant: {
-      control: "text",
+      control: { type: "radio" },
+      options: ["col1", "col2", "col3"],
       description: "Determines the number of columns in the grid.",
     },
     children: {
