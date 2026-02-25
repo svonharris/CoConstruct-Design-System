@@ -6,7 +6,6 @@
     font-size: var(--form-field-font-size);
     font-weight: var(--form-field-font-weight);
     font-family: var(--form-field-font-family);
-    border-radius: var(--form-field-border-radius);
     border-color: var(--form-field-border-color);
     border-bottom: var(--form-field-border-bottom);
     /* error message
@@ -16,4 +15,5 @@
 }
 .formInput:focus-visible {
     outline: var(--form-field-focus);
+    border-radius: var(--form-field-border-radius);
 }
