@@ -10,6 +10,7 @@ const meta = {
     label: "First Name",
     value: "Charlie",
     required: true,
+    onChange: () => {},
   },
   argTypes: {
     id: {
