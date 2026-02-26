@@ -3,9 +3,9 @@
   padding: 2rem;
 }
 .sbdocs {
-  h1, h2, h3, p, li {
-    font-family: proxima-nova, sans-serif;
-  }
+    h1, h2, h3, p, li {
+        font-family: proxima-nova, sans-serif;
+    }
 }
 .sbdocs h1 {
     font-size: var(--font-size-4xl);
