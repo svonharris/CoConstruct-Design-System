@@ -4,7 +4,7 @@ import Button from "./components/Button/Button";
 import Toggle from "./components/ToggleSwitch/ToggleSwitch";
 import Tabs from "./components/Tabs/Tabs";
 import HeroSection from "./components/HeroSection/HeroSection";
-import Form from "./components/Form/Form";
+import DemoForm from "./components/Form/DemoForm";
 import Modal from "./components/Modal/Modal";
 import NavBar from "./components/NavBar/NavBar";
 import Link from "./components/Link/Link";
@@ -38,7 +38,7 @@ function App() {
           title="Open the schedule a demo form"
         >
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <Form />
+            <DemoForm />
           </div>
         </Modal>
       </NavBar>
@@ -64,7 +64,7 @@ function App() {
               answer all your questions.
             </h4>
           </div>
-          <Form />
+          <DemoForm />
         </div>
       </Modal>
 
@@ -135,7 +135,7 @@ function App() {
         defaultActiveTab={0}
       />
       <br></br>
-      <Form />
+      <DemoForm />
       <Footer>
         <p>&copy; Copyright 2026 CoConstruct</p>
       </Footer>
