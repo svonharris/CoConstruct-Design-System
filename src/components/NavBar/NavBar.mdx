@@ -1,0 +1,41 @@
+import { Canvas, Meta, Controls } from "@storybook/addon-docs/blocks";
+
+import * as NavBarStories from "./NavBar.stories";
+import * as PlaygroundStories from "./NavBar.playground.stories";
+
+<Meta of={NavBarStories} />
+
+# Navigation Bar
+
+Provides top-level navigation and brand placement for the page.
+
+## Guidelines
+
+- Keep primary navigation links short and clear.
+- Use the hamburger toggle for compact layouts.
+- Keep the most important navigation actions visible.
+
+## Props
+
+<Canvas of={PlaygroundStories.PlaygroundDocs} />
+<Controls of={PlaygroundStories.PlaygroundDocs} />
+
+## Examples
+
+### No Content
+
+Use the Navigation Bar by itself to show base structure and branding.
+
+<Canvas of={NavBarStories.NoContent} />
+
+### With Content
+
+Add navigation links as children for full desktop navigation.
+
+<Canvas of={NavBarStories.WithContent} />
+
+### With Content, No Hamburger
+
+Hide the hamburger toggle when it is not needed.
+
+<Canvas of={NavBarStories.WithContentNoHamburger} />
