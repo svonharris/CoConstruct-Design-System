@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Link from "./Link";
 
 const meta = {
-  title: "Components/Navigation/Link",
+  title: "Components/Navigation/Links",
   component: Link,
   argTypes: {
     variant: {
