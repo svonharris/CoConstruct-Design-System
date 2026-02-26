@@ -1,0 +1,34 @@
+/* Storybook */
+.sbdocs.sbdocs-wrapper {
+  padding: 2rem;
+}
+.sbdocs {
+  h1, h2, h3, p, li {
+    font-family: proxima-nova, sans-serif;
+  }
+}
+.sbdocs h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+}
+.sbdocs h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-top: 1.5rem;
+}
+.sbdocs h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 4px;
+}
+.sbdocs p {
+    font-size: var(--font-size-base);
+    margin: 0 0 0.5rem;
+}
+.sbdocs li {
+    font-size: var(--font-size-base);
+    margin-bottom: 0.5rem;
+}
+.sbdocs a {
+    color: var(--blue);
+}
