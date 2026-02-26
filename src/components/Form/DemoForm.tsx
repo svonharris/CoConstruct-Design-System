@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "./Form.module.css";
+import style from "./DemoForm.module.css";
 import Button from "../Button/Button";
 import FormInput from "../FormInput/FormInput";
 import FormSelect from "../FormSelect/FormSelect";
@@ -14,7 +14,7 @@ type FormData = {
   builderType: string;
 };
 
-const Form = () => {
+const DemoForm = () => {
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",
@@ -136,4 +136,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default DemoForm;
