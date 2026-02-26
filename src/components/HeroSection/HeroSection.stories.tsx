@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import HeroSection from "./HeroSection";
 
 const meta = {
-  title: "Components/Hero Section",
+  title: "Components/Layout/Hero Section",
   component: HeroSection,
   args: {
     heading: "Section heading here",

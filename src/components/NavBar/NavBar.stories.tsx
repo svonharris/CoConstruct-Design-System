@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 import Link from "../Link/Link";
 
 const meta = {
-  title: "Components/Navigation Bar",
+  title: "Components/Containers/Navigation Bar",
   component: NavBar,
   argTypes: {
     showHamburger: {

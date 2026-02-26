@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import PricingCard from "./PricingCard";
 
 const meta = {
-  title: "Components/Pricing Card",
+  title: "Components/Cards/Pricing Card",
   component: PricingCard,
   args: {
     plan: "Essential",

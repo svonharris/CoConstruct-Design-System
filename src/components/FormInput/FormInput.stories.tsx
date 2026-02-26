@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import FormInput from "./FormInput";
 
 const meta = {
-  title: "Components/Form Input",
+  title: "Components/Form/Form Input",
   component: FormInput,
   args: {
     id: "lastName",

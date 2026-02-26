@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import FormSelect from "./FormSelect";
 
 const meta = {
-  title: "Components/Form Select",
+  title: "Components/Form/Form Select",
   component: FormSelect,
   args: {
     id: "builderType",

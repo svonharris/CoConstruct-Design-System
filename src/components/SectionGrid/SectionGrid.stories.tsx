@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import SectionGrid from "./SectionGrid";
 
 const meta = {
-  title: "Components/Section",
+  title: "Components/Layout/Section",
   component: SectionGrid,
   args: {
     children: (

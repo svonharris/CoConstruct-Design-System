@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Logo from "./Logo";
 
 const meta = {
-  title: "Components/Logo",
+  title: "Components/Media/Logo",
   component: Logo,
   argTypes: {
     variant: {

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Footer from "./Footer";
 
 const meta = {
-  title: "Components/Footer",
+  title: "Components/Containers/Footer",
   component: Footer,
   args: {
     children: "© 2024 CoConstruct. All rights reserved.",

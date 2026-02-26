@@ -3,7 +3,7 @@ import FormGroup from "./FormGroup";
 import style from "../FormInput/FormInput.module.css";
 
 const meta = {
-  title: "Components/Form Group",
+  title: "Components/Form/Form Group",
   component: FormGroup,
   argTypes: {
     label: {
