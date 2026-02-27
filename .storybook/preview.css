@@ -7,19 +7,19 @@
         font-family: proxima-nova, sans-serif;
     }
 }
-.sbdocs h1 {
+.sbdocs.sbdocs h1 {
     font-size: var(--font-size-4xl);
     font-weight: var(--font-weight-bold);
 }
-.sbdocs h2 {
+.sbdocs.sbdocs h2 {
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
     margin-top: 1.5rem;
 }
-.sbdocs h3 {
+.sbdocs.sbdocs h3 {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
-    margin-bottom: 4px;
+    margin: 20px 0px 4px;
 }
 .sbdocs p:not(.sbdocs-preview p) {
     font-size: var(--font-size-base);
