@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import style from "./ColorGrid.module.css";
 
 type BrandColor = {
   name: string;
@@ -58,53 +59,47 @@ export const ColorGrid: React.FC = () => {
     setSections(groupedColors);
   }, []);
 
-  return (
-    <div style={{ margin: "40px 0px" }}>
-      {sections.map((section) => (
-        <div
-          key={section.title}
-          style={{
-            marginBottom: "2rem",
-          }}
-        >
-          <h3 style={{ marginBottom: "1rem" }}>{section.title}</h3>
+  const swatchClassByName: Record<string, string> = {
+    "--white": style.swatchWhite,
+    "--white-off": style.swatchWhiteOff,
+    "--grey-silver": style.swatchGreySilver,
+    "--grey-pale": style.swatchGreyPale,
+    "--grey-light": style.swatchGreyLight,
+    "--grey": style.swatchGrey,
+    "--grey-cool": style.swatchGreyCool,
+    "--grey-mid": style.swatchGreyMid,
+    "--grey-dark": style.swatchGreyDark,
+    "--charcoal": style.swatchCharcoal,
+    "--black": style.swatchBlack,
+    "--green-mint": style.swatchGreenMint,
+    "--green": style.swatchGreen,
+    "--green-emerald": style.swatchGreenEmerald,
+    "--blue": style.swatchBlue,
+    "--red": style.swatchRed,
+  };
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(120px, 120px))",
-              gap: "1rem",
-            }}
-          >
+  return (
+    <div className={style.colorGridWrapper}>
+      {sections.map((section) => (
+        <div key={section.title} className={style.section}>
+          <h2>{section.title}</h2>
+
+          <div className={style.sectionGrid}>
             {section.colors.map((color) => (
-              <div
-                key={color.name}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
-              >
-                <div style={{ textAlign: "center", marginBottom: "5px" }}>
+              <div key={color.name} className={style.colorItem}>
+                <div className={style.colorLabel}>
                   {color.name
                     .replace("--", "")
                     .replace(/^\w/, (c) => c.toUpperCase())}
                   <br />
-                  <span style={{ fontSize: "13px" }}>
+                  <span className={style.colorValue}>
                     {color.value || "(not defined)"}
                   </span>
                 </div>
                 <div
-                  style={{
-                    backgroundColor: color.value || "transparent",
-                    width: "100px",
-                    height: "100px",
-                    borderRadius: "8px",
-                    border:
-                      color.name === "--white"
-                        ? "2px solid var(--white-off)"
-                        : "none",
-                  }}
+                  className={`${style.colorSwatch} ${
+                    swatchClassByName[color.name] || style.swatchUndefined
+                  }`}
                 />
               </div>
             ))}

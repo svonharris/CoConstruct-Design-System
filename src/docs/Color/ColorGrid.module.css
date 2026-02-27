@@ -1,0 +1,105 @@
+.colorGridWrapper.colorGridWrapper {
+	margin: 40px 0;
+}
+
+.section.section {
+	margin-bottom: 2rem;
+}
+
+.sectionGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, 120px));
+	gap: 1rem;
+    padding-top: 10px;
+}
+
+.colorItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.colorLabel.colorLabel {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.colorValue {
+	font-size: 13px;
+}
+
+.colorSwatch {
+	width: 100px;
+	height: 100px;
+	border-radius: 8px;
+	border: none;
+}
+
+.swatchWhite {
+	background-color: var(--white);
+	border: 2px solid var(--white-off);
+}
+
+.swatchWhiteOff {
+	background-color: var(--white-off);
+}
+
+.swatchGreySilver {
+	background-color: var(--grey-silver);
+}
+
+.swatchGreyPale {
+	background-color: var(--grey-pale);
+}
+
+.swatchGreyLight {
+	background-color: var(--grey-light);
+}
+
+.swatchGrey {
+	background-color: var(--grey);
+}
+
+.swatchGreyCool {
+	background-color: var(--grey-cool);
+}
+
+.swatchGreyMid {
+	background-color: var(--grey-mid);
+}
+
+.swatchGreyDark {
+	background-color: var(--grey-dark);
+}
+
+.swatchCharcoal {
+	background-color: var(--charcoal);
+}
+
+.swatchBlack {
+	background-color: var(--black);
+}
+
+.swatchGreenMint {
+	background-color: var(--green-mint);
+}
+
+.swatchGreen {
+	background-color: var(--green);
+}
+
+.swatchGreenEmerald {
+	background-color: var(--green-emerald);
+}
+
+.swatchBlue {
+	background-color: var(--blue);
+}
+
+.swatchRed {
+	background-color: var(--red);
+}
+
+.swatchUndefined {
+	background-color: transparent;
+}
