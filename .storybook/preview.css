@@ -21,14 +21,14 @@
     font-weight: var(--font-weight-bold);
     margin-bottom: 4px;
 }
-.sbdocs p {
+.sbdocs p:not(.sbdocs-preview p) {
     font-size: var(--font-size-base);
     margin: 0 0 0.5rem;
 }
-.sbdocs li {
+.sbdocs li:not(.sbdocs-preview li) {
     font-size: var(--font-size-base);
     margin-bottom: 0.5rem;
 }
-.sbdocs a {
+.sbdocs a:not(.sbdocs-preview a) {
     color: var(--blue);
 }
