@@ -5,7 +5,7 @@ const meta = {
   title: "Components/Media/Image",
   component: Image,
   args: {
-    src: "../src/assets/BT_CoConstruct_Logos_Color_Stacked.png",
+    src: "https://cdn.prod.website-files.com/5dd697a92383b03af38eecdc/65d6079efd15d67edbffad56_co-homepage-masthead-p-800.webp",
     width: "500px",
     height: "auto",
   },
