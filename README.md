@@ -1,8 +1,9 @@
-<style>
-    /* .markdown-body {background-color: red;} */
-    .markdown-body .logo {
+<style>{`
+    .markdown-body img {
         margin: 0 auto;
         display: block;
+    }
+    .markdown-body h1 {
         text-align: center;
     }
     .markdown-body hr {
@@ -10,15 +11,12 @@
         margin: 1.5rem 0;
         background-color: #ededed;
     }
-</style>
+`}</style>
 
-<div classname="markdown-body">
-
-<div classname="logo">
+<div className="markdown-body">
 
 ![CoConstruct Logo](public/CoConstruct_Logo-square.png "CoConstruct Logo")
-
-</div>
+<br>
 
 # CoConstruct Design System
 
