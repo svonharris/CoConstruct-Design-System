@@ -95,4 +95,4 @@ Interactive documentation and live examples are available in our internal Storyb
 - Explore components
 - View accessibility notes
 - Inspect props and variants
-- Review usage guideline
+- Review usage guidelines
