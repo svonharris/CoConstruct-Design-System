@@ -6,6 +6,6 @@ addons.setConfig({
     base: 'light',
     brandTitle: '',
     brandUrl: '/',
-    brandImage: './CoConstruct_Logo-square.png',
+    // brandImage: './CoConstruct_Logo-square.png',
   }),
 });
