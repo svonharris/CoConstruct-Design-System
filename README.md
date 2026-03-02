@@ -1,7 +1,6 @@
 <p align="center">
   <img src="public/CoConstruct_Logo-square.png" alt="CoConstruct Logo" />
 </p>
-<br>
 
 <h1 align="center">CoConstruct Design System</h1 >
 
