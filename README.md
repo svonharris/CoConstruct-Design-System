@@ -1,13 +1,13 @@
-<img src="public/CoConstruct_Logo-square.png" alt="CoConstruct Logo" style="margin: 0 auto; display: block;" />
+<img src="public/CoConstruct_Logo-square.png" alt="CoConstruct Logo" align="center" />
 <br>
 
-<h1 style="text-align: center;">CoConstruct Design System</h1 >
+<h1 align="center">CoConstruct Design System</h1 >
 
 The CoConstruct Design System provides reusable UI components, design tokens, and foundations that help teams build consistent, accessible, and scalable product experiences across CoConstruct applications.
 
 This guide walks you through installing and using the design system in your project.
 
-<hr style="height: .25em; margin: 1.5rem 0; background-color: #ededed;">
+<hr size="4" color="#ededed">
 What this includes:
 
 - Reusable React components (buttons, inputs, dropdowns, navigation, cards, modals, and more)
@@ -37,7 +37,7 @@ npm install @coconstruct/design-system
 
 ### Peer Dependencies
 
-<hr style="width: 50%; margin: 0;">
+<hr width="50%" align="left">
 
 Make sure your project includes the required peer dependencies:
 
@@ -53,7 +53,7 @@ npm install -D typescript @types/react @types/react-dom
 
 ### Using Components
 
-<hr style="width: 50%; margin: 0;">
+<hr width="50%" align="left">
 Import components directly:
 
 ```
@@ -66,7 +66,7 @@ export function Example() {
 
 ### Using Design Tokens
 
-<hr style="width: 50%; margin: 0;">
+<hr width="50%" align="left">
 Design tokens are available for direct use in CSS or JavaScript.
 
 #### Javascript
@@ -86,7 +86,7 @@ console.log(tokens.color.primary);
 }
 ```
 
-<hr style="height: .25em; margin: 1.5rem 0; background-color: #ededed;">
+<hr size="4" color="#ededed">
 
 ## Documentation
 
