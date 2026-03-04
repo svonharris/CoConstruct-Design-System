@@ -248,7 +248,6 @@
   --link-arrow-font-size: var(--font-size-base);
   --link-arrow-font-weight: var(--font-weight-medium);
   --link-arrow-font-family: var(--font-primary);
-  --link-arrow-symbol-font-weight: var(--font-weight-extra-bold);
   --link-arrow-symbol-font-size: var(--font-size-xs);
   
   --link-navigation-color: var(--grey-dark);
