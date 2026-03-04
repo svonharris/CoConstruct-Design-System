@@ -31,12 +31,6 @@ const Link = ({
       title={title ? title : ariaLabel}
     >
       {label}
-      {/* arrow symbol */}
-      {variant === "arrow" && (
-        <span aria-hidden="true" className={style.linkArrowSymbol}>
-          →
-        </span>
-      )}
     </a>
   );
 };
