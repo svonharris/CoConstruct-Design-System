@@ -5,7 +5,7 @@ const meta = {
   title: "Internal/Playground/Link", // hide in internal section
   component: Link,
   args: {
-    href: "/?path=/story/components-link--docs",
+    href: "./?path=/story/components-link--docs",
     label: "Link",
     variant: "default",
   },

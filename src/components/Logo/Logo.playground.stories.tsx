@@ -6,7 +6,7 @@ const meta = {
   component: Logo,
   args: {
     width: "auto",
-    href: "/",
+    href: "./",
     variant: "default",
   },
   argTypes: {

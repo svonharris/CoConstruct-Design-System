@@ -10,13 +10,13 @@ const meta = {
     children: (
       <>
         <Link
-          href="/pricing"
+          href="./pricing"
           label="Pricing"
           ariaLabel="Go to Pricing Page"
           variant="navigation"
         />
         <Link
-          href="/resources"
+          href="./resources"
           label="Current Customers"
           ariaLabel="Go to Current Customers Page"
           variant="navigation"

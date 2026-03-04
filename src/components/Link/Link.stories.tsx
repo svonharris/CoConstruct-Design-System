@@ -22,7 +22,7 @@ type Story = StoryObj<typeof Link>;
 
 export const Default: Story = {
   args: {
-    href: "/?path=/story/components-link--default",
+    href: "./?path=/story/components-link--default",
     label: "Default Link",
     variant: "default",
   },
@@ -30,7 +30,7 @@ export const Default: Story = {
 
 export const Arrow: Story = {
   args: {
-    href: "/?path=/story/components-link--arrow",
+    href: "./?path=/story/components-link--arrow",
     label: "Arrow Link",
     variant: "arrow",
   },
@@ -38,7 +38,7 @@ export const Arrow: Story = {
 
 export const Navigation: Story = {
   args: {
-    href: "/?path=/story/components-link--navigation",
+    href: "./?path=/story/components-link--navigation",
     label: "Navigation Link",
     variant: "navigation",
   },

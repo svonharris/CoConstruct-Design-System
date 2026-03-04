@@ -25,13 +25,13 @@ export const WithContent: Story = {
     children: (
       <>
         <Link
-          href="/"
+          href="./"
           label="Pricing"
           ariaLabel="Go to Pricing Page"
           variant="navigation"
         />
         <Link
-          href="/resources"
+          href="./resources"
           label="Current Customers"
           ariaLabel="Go to Current Customers Page"
           variant="navigation"
