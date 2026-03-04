@@ -5,7 +5,11 @@ addons.setConfig({
   theme: create({
     base: 'light',
     brandTitle: '',
-    brandUrl: '/',
+    brandUrl: './',
     brandImage: './CoConstruct_Logo-square.png',
   }),
 });
+
+module.exports = {
+  staticDirs: ['../public'],
+};
