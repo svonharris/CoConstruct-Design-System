@@ -13,7 +13,7 @@ const NavBar = ({ children, showHamburger = true }: NavBarProps) => {
   const handleToggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className={style.navbar}>
+    <header className={style.navbar}>
       <div className={style.navContainer}>
         {/* Logo */}
         <Logo />
@@ -32,13 +32,13 @@ const NavBar = ({ children, showHamburger = true }: NavBarProps) => {
         )}
 
         {/* Navigation Content */}
-        <div
+        <nav
           className={`${style.navMenu} ${showHamburger ? `${style.hamburgerVisible} ${isMenuOpen ? style.active : ""}` : ""}`}
         >
           {children}
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 };
 
