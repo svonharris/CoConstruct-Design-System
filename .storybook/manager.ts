@@ -9,7 +9,3 @@ addons.setConfig({
     brandImage: './CoConstruct_Logo-square.png',
   }),
 });
-
-module.exports = {
-  staticDirs: ['../public'],
-};
