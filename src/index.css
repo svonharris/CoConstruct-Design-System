@@ -341,7 +341,7 @@ p {
 }
 
 button {
-  color: var(--font-size-inherit);
+  color: var(--black);
   font: inherit;
   margin: 0;
   overflow: visible;
