@@ -10,16 +10,16 @@ View the published Storybook here: [svonharris.github.io/CoConstruct-Design-Syst
 
 - Branch: `gh-pages`
 - Purpose: Hosts the compiled Storybook static files
-- Source branch: `DS-storybook`
+- Source branch: `main`
 - Deployment: Automated via GitHub Actions
 - Build output folder: `storybook-static`
 - This branch should not be edited manually.
 
-All changes must be made in the `DS-storybook `branch and pushed to trigger the deployment workflow.
+All changes must be made in the `main `branch and pushed to trigger the deployment workflow.
 
 ## Deployment Process
 
-1. Make changes in the Storybook project (`DS-storybook `branch)
+1. Make changes in the Storybook project (`main `branch)
 2. Commit and push changes
 3. GitHub Actions automatically:
    - Installs dependencies
@@ -37,7 +37,7 @@ This process implements Continuous Integration and Continuous Deployment (CI/CD)
 
 ## Repository Structure
 
-| Branch         |                   Purpose                    |
-| -------------- | :------------------------------------------: |
-| `DS-storybook` | Development branch for Storybook source code |
-| `gh-pages`     |   Auto-generated static deployment branch    |
+| Branch     |                   Purpose                    |
+| ---------- | :------------------------------------------: |
+| `main`     | Development branch for Storybook source code |
+| `gh-pages` |   Auto-generated static deployment branch    |
