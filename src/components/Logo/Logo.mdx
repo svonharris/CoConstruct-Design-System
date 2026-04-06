@@ -1,0 +1,34 @@
+import { Canvas, Meta, Controls } from "@storybook/addon-docs/blocks";
+
+import * as LogoStories from "./Logo.stories";
+import * as PlaygroundStories from "./Logo.playground.stories";
+
+<Meta of={LogoStories} />
+
+# Logo
+
+Represents the brand and links users to the homepage.
+
+## Guidelines
+
+- Use the default logo in primary brand placements.
+- Use the compact logo when horizontal space is limited.
+
+## Props
+
+<Canvas of={PlaygroundStories.PlaygroundDocs} />
+<Controls of={PlaygroundStories.PlaygroundDocs} />
+
+## Examples
+
+### Default
+
+Use the default logo for standard brand display.
+
+<Canvas of={LogoStories.Default} />
+
+### Compact
+
+Use the compact logo in constrained layouts.
+
+<Canvas of={LogoStories.Compact} />

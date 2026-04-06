@@ -1,0 +1,48 @@
+import { Canvas, Meta, Controls } from "@storybook/addon-docs/blocks";
+
+import * as LinkStories from "./Link.stories";
+import * as PlaygroundStories from "./Link.playground.stories";
+
+<Meta of={LinkStories} />
+
+# Link
+
+A link is a navigation element and can be used independently or inline with text. It is the lightweight variant for navigation.
+
+## Guidelines
+
+- Use clear, descriptive link text so users know where the link goes.
+- Match the variant to context:
+  - Use `Default` for inline text
+  - Use `Arrow` for call-to-action links
+  - Use `Navigation` for menu or nav links.
+- Use a link in the following cases:
+  - To navigate to another page within the website
+  - To navigate to another website
+  - To navigate to an element on the same page
+  - To link to emails or phone numbers (start the link with `mailto`: or `tel`:)
+
+## Props
+
+<Canvas of={PlaygroundStories.PlaygroundDocs} />
+<Controls of={PlaygroundStories.PlaygroundDocs} />
+
+## Examples
+
+### Default
+
+Use a default link inline text text.
+
+<Canvas of={LinkStories.Default} />
+
+### Arrow
+
+Use an arrow link for call-to-action links.
+
+<Canvas of={LinkStories.Arrow} />
+
+### Navigation
+
+Use a navigation link for menus and site navigation.
+
+<Canvas of={LinkStories.Navigation} />

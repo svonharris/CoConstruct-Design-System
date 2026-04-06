@@ -4,15 +4,15 @@ type SectionGrid = {
   children: React.ReactNode;
   variant?: SectionGridVariant;
 };
-type SectionGridVariant = "1col" | "2col" | "3col";
+type SectionGridVariant = "col1" | "col2" | "col3";
 
 const VARIANT_STYLES: Record<SectionGridVariant, string> = {
-  "1col": style.sectionColOne,
-  "2col": style.sectionColTwo,
-  "3col": style.sectionColThree,
+  col1: style.sectionColOne,
+  col2: style.sectionColTwo,
+  col3: style.sectionColThree,
 };
 
-const SectionGrid = ({ children, variant = "1col" }: SectionGrid) => {
+const SectionGrid = ({ children, variant = "col1" }: SectionGrid) => {
   return (
     <section className={`${VARIANT_STYLES[variant]} ${style.section}`}>
       {children}

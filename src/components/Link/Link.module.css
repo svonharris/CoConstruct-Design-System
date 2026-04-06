@@ -12,11 +12,11 @@
     font-weight: var(--link-arrow-font-weight);
     font-family: var(--link-arrow-font-family);
     text-decoration: none;
-}
-.linkArrowSymbol {
-    font-weight: var(--link-arrow-symbol-font-weight);
-    font-size: var(--link-arrow-symbol-font-size);
-    padding-left: 4px;
+    &::after {
+        content: "→";
+        font-size: var(--link-arrow-symbol-font-size);
+        padding-left: 4px;
+    }
 }
 .linkNavigation {
     color: var(--link-navigation-color);

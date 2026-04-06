@@ -1,0 +1,30 @@
+import { Canvas, Meta, Controls } from "@storybook/addon-docs/blocks";
+
+import * as FormInputStories from "./FormInput.stories";
+import * as PlaygroundStories from "./FormInput.playground.stories";
+
+<Meta of={FormInputStories} />
+
+# Form Input
+
+A form field in which a user can enter text.
+
+## Guidelines
+
+- Use a Form Input when users need to enter a single line of text, such as their name or phone number.
+- Do not use a Form Input when users could provide more than 1 line of text.
+- A Form Input must have a Label, and in most cases, this label should be visible.
+- Mark inputs as required only when submission depends on that field.
+
+## Props
+
+<Canvas of={PlaygroundStories.PlaygroundDocs} />
+<Controls of={PlaygroundStories.PlaygroundDocs} />
+
+## Examples
+
+### Default
+
+Use the default Form Input for basic text entry.
+
+<Canvas of={FormInputStories.Default} />

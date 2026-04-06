@@ -8,11 +8,11 @@
     margin-top: 10px;
     margin-bottom: 15px;
     appearance: none;
-    border-radius: var(--form-field-border-radius);
     border-color: var(--form-field-border-color);
     border-bottom: var(--form-field-border-bottom);
     /* border: 1px solid #f2545b; error message */
 }
 .formSelect:focus-visible {
     outline: var(--form-field-focus);
+    border-radius: var(--form-field-border-radius);
 }

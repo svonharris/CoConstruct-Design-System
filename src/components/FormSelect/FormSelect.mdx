@@ -1,0 +1,28 @@
+import { Canvas, Meta, Controls } from "@storybook/addon-docs/blocks";
+
+import * as FormSelectStories from "./FormSelect.stories";
+import * as PlaygroundStories from "./FormSelect.playground.stories";
+
+<Meta of={FormSelectStories} />
+
+# Form Select
+
+A form field that allows users to select one option from a list.
+
+## Guidelines
+
+- Use clear option labels that are easy to scan.
+- Provide a meaningful label that explains what the selection controls.
+
+## Props
+
+<Canvas of={PlaygroundStories.PlaygroundDocs} />
+<Controls of={PlaygroundStories.PlaygroundDocs} />
+
+## Examples
+
+### Default
+
+Use the default select input for single-choice form fields.
+
+<Canvas of={FormSelectStories.Default} />

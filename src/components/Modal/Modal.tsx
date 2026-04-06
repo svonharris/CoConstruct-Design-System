@@ -5,36 +5,24 @@ import Button from "../Button/Button";
 type ModalProps = {
   children: React.ReactNode;
   buttonLabel: string;
-  ariaLabel: string;
   title?: string;
   variant?: "primary" | "secondary";
 };
 
-const Modal = ({
-  children,
-  buttonLabel,
-  ariaLabel,
-  title,
-  variant,
-}: ModalProps) => {
+const Modal = ({ children, buttonLabel, title, variant }: ModalProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
+  const handleOpenModal = () => setIsOpen(true);
+  const handleCloseModal = () => setIsOpen(false);
 
   return (
     <>
-      <Button
-        onClick={openModal}
-        ariaLabel={ariaLabel}
-        title={title}
-        variant={variant}
-      >
+      <Button onClick={handleOpenModal} title={title} variant={variant}>
         {buttonLabel}
       </Button>
 
       {isOpen && (
-        <div className={styles.modalOverlay} onClick={closeModal}>
+        <div className={styles.modalOverlay} onClick={handleCloseModal}>
           <div
             className={styles.modalContent}
             onClick={(e) => e.stopPropagation()}
@@ -42,7 +30,11 @@ const Modal = ({
             aria-modal="true"
             aria-labelledby="modal-title"
           >
-            <button className={styles.closeBtn} onClick={closeModal}>
+            <button
+              className={styles.closeBtn}
+              onClick={handleCloseModal}
+              aria-label="Close Modal"
+            >
               +
             </button>
             {children}

@@ -1,0 +1,40 @@
+import { Canvas, Meta, Controls } from "@storybook/addon-docs/blocks";
+
+import * as SectionStories from "./SectionGrid.stories";
+import * as PlaygroundStories from "./SectionGrid.playground.stories";
+
+<Meta of={SectionStories} />
+
+# Section Grid
+
+Creates a responsive section layout with one, two, or three columns.
+
+## Guidelines
+
+- Choose the column count based on the amount and density of content.
+- Keep content blocks visually balanced within each column layout.
+
+## Props
+
+<Canvas of={PlaygroundStories.PlaygroundDocs} />
+<Controls of={PlaygroundStories.PlaygroundDocs} />
+
+## Examples
+
+### One Column
+
+Use one column for full-width content.
+
+<Canvas of={SectionStories.OneColumn} />
+
+### Two Column
+
+Use two columns to present paired content.
+
+<Canvas of={SectionStories.TwoColumn} />
+
+### Three Column
+
+Use three columns for compact grouped content.
+
+<Canvas of={SectionStories.ThreeColumn} />

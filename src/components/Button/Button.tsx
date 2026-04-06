@@ -3,7 +3,6 @@ import style from "./Button.module.css";
 type ButtonProps = {
   children: React.ReactNode;
   onClick: () => void;
-  ariaLabel: string;
   title?: string;
   type?: "button" | "submit";
   disabled?: boolean;
@@ -18,17 +17,15 @@ const VARIANT_STYLES: Record<"primary" | "secondary", string> = {
 const Button = ({
   children,
   onClick,
-  ariaLabel,
-  title = ariaLabel,
+  title,
   type = "button",
-  disabled,
+  disabled = false,
   variant = "primary",
 }: ButtonProps) => {
   return (
     <button
       className={`${style.baseButton} ${VARIANT_STYLES[variant]}`}
       onClick={onClick}
-      aria-label={ariaLabel}
       type={type}
       disabled={disabled}
       title={title}

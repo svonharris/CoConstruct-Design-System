@@ -18,14 +18,14 @@ type SubmenuProps = {
 const Submenu = ({ label, items, variant = "navigation" }: SubmenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleSubmenu = () => setIsOpen(!isOpen);
-  const closeSubmenu = () => setIsOpen(false);
+  const handleOpenSubmenu = () => setIsOpen(!isOpen);
+  const handleCloseSubmenu = () => setIsOpen(false);
 
   return (
     <div className={style.Submenu}>
       <button
         className={style.SubmenuToggle}
-        onClick={toggleSubmenu}
+        onClick={handleOpenSubmenu}
         aria-expanded={isOpen}
         aria-label={`Toggle ${label} menu`}
       >
@@ -34,7 +34,7 @@ const Submenu = ({ label, items, variant = "navigation" }: SubmenuProps) => {
       </button>
 
       {isOpen && (
-        <ul className={style.SubmenuMenu} onMouseLeave={closeSubmenu}>
+        <ul className={style.SubmenuMenu} onMouseLeave={handleCloseSubmenu}>
           {items.map((item) => (
             <li key={item.href} className={style.SubmenuItem}>
               <Link

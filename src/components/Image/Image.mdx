@@ -1,0 +1,29 @@
+import { Canvas, Meta, Controls } from "@storybook/addon-docs/blocks";
+
+import * as ImageStories from "./Image.stories";
+import * as PlaygroundStories from "./Image.playground.stories";
+
+<Meta of={ImageStories} />
+
+# Image
+
+Displays an image.
+
+## Guidelines
+
+- Always provide meaningful alt text for accessibility.
+- Use width and height values to maintain layout consistency.
+- The `alt` attribute is required.
+
+## Props
+
+<Canvas of={PlaygroundStories.PlaygroundDocs} />
+<Controls of={PlaygroundStories.PlaygroundDocs} />
+
+## Examples
+
+### Default
+
+Use the default image for standard content imagery.
+
+<Canvas of={ImageStories.Default} />
