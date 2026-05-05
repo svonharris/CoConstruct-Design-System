@@ -2,13 +2,16 @@
   <img src="public/CoConstruct_Logo-square.png" alt="CoConstruct Logo" />
 </p>
 
-<h1 align="center">CoConstruct Design System</h1 >
+<h1 align="center">CoConstruct Design System</h1>
+
+Storybook is live at: https://svonharris.github.io/CoConstruct-Design-System/
 
 The CoConstruct Design System provides reusable UI components, design tokens, and foundations that help teams build consistent, accessible, and scalable product experiences across CoConstruct applications.
 
 This guide walks you through installing and using the design system in your project.
 
 <hr size="4" color="#ededed">
+
 What this includes:
 
 - Reusable React components (buttons, inputs, dropdowns, navigation, cards, modals, and more)
@@ -32,9 +35,19 @@ The system is built on:
 
 ## Get Started
 
+Install the latest version:
+
 ```
-npm install @coconstruct/design-system
+npm install github:svonharris/CoConstruct-Design-System
 ```
+
+To install a specific release, append the version tag:
+
+```
+npm install github:svonharris/CoConstruct-Design-System#v1.0.1
+```
+
+Tags follow [semantic versioning](https://semver.org) and map to GitHub releases. Pinning to a tag is recommended for production use to ensure reproducible installs.
 
 ### Peer Dependencies
 
@@ -55,6 +68,7 @@ npm install -D typescript @types/react @types/react-dom
 ### Using Components
 
 <hr width="50%" align="left">
+
 Import components directly:
 
 ```
@@ -68,15 +82,8 @@ export function Example() {
 ### Using Design Tokens
 
 <hr width="50%" align="left">
+
 Design tokens are available for direct use in CSS or JavaScript.
-
-#### Javascript
-
-```
-import { tokens } from '@coconstruct/design-system';
-
-console.log(tokens.color.primary);
-```
 
 #### CSS
 
@@ -87,13 +94,32 @@ console.log(tokens.color.primary);
 }
 ```
 
-<hr size="4" color="#ededed">
+#### JavaScript
 
+```
+import { tokens } from '@coconstruct/design-system';
+
+console.log(tokens.color.primary);
+```
+
+<hr size="4" color="#ededed">
+ 
 ## Documentation
 
-Interactive documentation and live examples are available in our internal Storybook environment powered by Storybook. There you can:
+Storybook is live at: https://svonharris.github.io/CoConstruct-Design-System/
+
+Interactive documentation and live examples are published via [GitHub](https://svonharris.github.io/CoConstruct-Design-System/). There you can:
 
 - Explore components
 - View accessibility notes
 - Inspect props and variants
 - Review usage guidelines
+
+### Run Storybook locally
+
+```
+npm install
+npm run storybook
+```
+
+Opens at [http://localhost:6006](http://localhost:6006).
