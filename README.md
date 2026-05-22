@@ -4,7 +4,7 @@
 
 <h1 align="center">CoConstruct Design System</h1>
 
-Storybook is live at: https://svonharris.github.io/CoConstruct-Design-System/
+Storybook is live at: <a href="https://svonharris.github.io/CoConstruct-Design-System/" target="_blank">https://svonharris.github.io/CoConstruct-Design-System/</a>
 
 The CoConstruct Design System provides reusable UI components, design tokens, and foundations that help teams build consistent, accessible, and scalable product experiences across CoConstruct applications.
 
@@ -106,7 +106,7 @@ console.log(tokens.color.primary);
  
 ## Documentation
 
-Storybook is live at: https://svonharris.github.io/CoConstruct-Design-System/
+Storybook is live at: <a href="https://svonharris.github.io/CoConstruct-Design-System/" target="_blank">https://svonharris.github.io/CoConstruct-Design-System/</a>
 
 Interactive documentation and live examples are published via [GitHub](https://svonharris.github.io/CoConstruct-Design-System/). There you can:
 
