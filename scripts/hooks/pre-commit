@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+set -e
+node "$(git rev-parse --show-toplevel)/scripts/update-changelog.js"

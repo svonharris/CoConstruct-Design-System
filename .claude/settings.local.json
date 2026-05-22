@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(node scripts/update-changelog.js)",
+      "Bash(git checkout *)",
+      "Bash(git restore *)"
+    ]
+  }
+}
